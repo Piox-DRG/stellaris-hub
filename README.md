@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StellarisHUB
 
-## Getting Started
+StellarisHUB is a web application that allows users to create custom empires for the game Stellaris. Users can create and customize various aspects of their empires, export the empire data as a game file, write guides for their empires, and vote and comment on other users' guides.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Create and customize empires by selecting traits, origins, ethics, civics, governments, and more.
+- Export the empire data as a game file compatible with Stellaris.
+- Write and publish guides for your empires, sharing your strategies and insights with the community.
+- Vote and comment on other users' guides to provide feedback and engage in discussions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project is built using the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React: JavaScript library for building user interfaces.
+- Next.js: React framework for server-side rendering and static site generation.
+- TypeScript: Typed superset of JavaScript for enhanced developer productivity.
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.
+- Draft.js: Rich text editor framework for creating and editing guide content.
+- Express.js: Web application framework for building server-side APIs.
+- Passport.js: Authentication middleware for handling user authentication, including Discord authentication.
+- Prisma: Database toolkit for interfacing with databases using TypeScript.
+- Algolia: Search API for implementing powerful search functionality.
+- Jest: Testing framework for unit testing the application.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+to add
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Stellaris](https://www.paradoxplaza.com/stellaris) - The game that inspired this project.
