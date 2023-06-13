@@ -30,4 +30,4 @@ to add
 
 ## Acknowledgements
 
-- [Stellaris](https://www.paradoxplaza.com/stellaris) - The game that inspired this project.
+- [Stellaris](https://www.paradoxinteractive.com/games/stellaris/about) - The game that inspired this project.
