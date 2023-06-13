@@ -1,0 +1,21 @@
+{
+    "ethics": [
+      {
+        "id": "ethic_authoritarian",
+        "name": "Authoritarian",
+        "description": "This empire favors a centralized and authoritarian government.",
+        "bonuses": [
+          {
+            "type": "pop_happiness",
+            "bonus": "+5%"
+          },
+          {
+            "type": "slave_production",
+            "bonus": "+10%"
+          }
+        ]
+      }
+      
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "origins": [
+      {
+        "id": "origin_here_be_dragons",
+        "name": "Here Be Dragons",
+        "description": "The empire originates from a region of space teeming with dangerous creatures.",
+        "bonuses": [
+          {
+            "type": "army_damage",
+            "bonus": "+10%"
+          },
+          {
+            "type": "survey_speed",
+            "bonus": "+25%"
+          }
+        ]
+      }
+      
+    ]
+  }
+  

@@ -1,0 +1,32 @@
+{
+    "traits": [
+      {
+        "id": "trait_aquatic",
+        "name": "Aquatic",
+        "description": "This species has adapted to life in aquatic environments.",
+        "bonuses": [
+          {
+            "type": "resource_production",
+            "resource": "food",
+            "bonus": "+10%"
+          },
+          {
+            "type": "happiness",
+            "bonus": "+10%"
+          }
+        ]
+      },
+      {
+        "id": "trait_nomadic",
+        "name": "Nomadic",
+        "description": "This species has a nomadic lifestyle, making it adept at resettlement.",
+        "bonuses": [
+          {
+            "type": "pop_migration",
+            "bonus": "+25%"
+          }
+        ]
+      }
+    ]
+  }
+  

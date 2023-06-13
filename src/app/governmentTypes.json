@@ -1,0 +1,21 @@
+{
+    "governmentTypes": [
+      {
+        "id": "gov_bandit_kingdom",
+        "name": "Bandit Kingdom",
+        "description": "A government ruled by ruthless bandits and pirates.",
+        "bonuses": [
+          {
+            "type": "piracy",
+            "bonus": "+25%"
+          },
+          {
+            "type": "trade_value",
+            "bonus": "+10%"
+          }
+        ]
+      }
+      
+    ]
+  }
+  
