@@ -1,0 +1,62 @@
+{ 
+    "sillicate traits":[
+{
+    "id": "trait_lithoid",
+    "name": "Lithoid",
+    "icon": "Trait_lithoid",
+    "description": "This species has a silicon based biology, and consumes minerals rather than food. They are tougher than traditional organics and have slower metabolisms, making them long lived but slow to reproduce.",
+    "positive": true,
+    "traitPoint": 0,
+    "effects": ["−25% Pop Growth Speed", "−25% Pop assembly speed", "+50 Habitability", "+50 Army health", "+50 years Leader Lifespan", "Consumes Minerals instead of Food"],
+    "archetypes": ["lithoid"],
+    "excludesTraits": ["trait_agrarian", "trait_extremely_adaptive", "trait_nonadaptive", "trait_slow_breeders"] 
+},
+{
+    "id": "trait_gaseous_byproducts",
+    "name": "Gaseous Byproducts",
+    "icon": "Trait_lithoid_gaseous_byproducts",
+    "description": "The metabolic processes of this species cause regular venting of gases useful to industry.",
+    "positive": true,
+    "traitPoint": 2,
+    "effects": ["+0.01 Monthly Exotic Gases per Pop"],
+    "archetypes": ["lithoid"],
+    "excludesTraits":["trait_scintillating_skin", "trait_volatile_excretions"]
+  },
+  {
+    "id": "trait_volatile_excretions",
+    "name": "Volatile Excretions",
+    "icon": "Trait_lithoid_volatile_excretions",
+    "description": "The highly compressed spoor created by this species is unstable and contains an unbelievable amount of power.",
+    "positive": true,
+    "traitPoint": 2,
+    "effects": ["+0.01 Monthly Volatile Motes per Pop"],
+    "archetypes": ["lithoid"],
+    "excludesTraits":["trait_gaseous_byproducts", "trait_scintillating_skin"]
+  },
+  {
+    "id": "trait_scintillating_skin",
+    "name": "Scintillating Skin",
+    "icon": "Trait_lithoid_scintillating_skin",
+    "description": "The outermost layer of this species is studded with sparkling crystals and gemstones that occasionally flake off.",
+    "positive": true,
+    "traitPoint": 2,
+    "effects": ["+0.01 Monthly Rare Crystals per Pop"],
+    "archetypes": ["lithoid"],
+    "excludesTraits":["trait_gaseous_byproducts", "trait_volatile_excretions"]
+  }, 
+  {
+    "id": "trait_crystallization",
+    "name": "Crystallization",
+    "icon": "Trait_lithoid_budding",
+    "description": "With crystalline growths, this species is capable of generating self replicating lattices of themselves, in addition to the more usual reproductive methods.",
+    "positive": true,
+    "traitPoint": 2,
+    "effects": ["+0.02 Monthly Organic Pop Assembly per Pop"],
+    "archetypes": ["lithoid"],
+    "excludesTraits":["trait_slow_breeders", "trait_rapid_breeders", "trait_incubators", "trait_clone_soldier", "trait_necrophage"]
+  }
+  
+
+]
+  }
+  
