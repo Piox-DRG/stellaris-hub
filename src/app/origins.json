@@ -1,18 +1,42 @@
 {
     "origins": [
       {
-        "id": "origin_here_be_dragons",
-        "name": "Here Be Dragons",
+        "id": "origin_default",
+        "name": "Prosperous Unification",
+        "icon":"Origins_default.png" ,
+        "image": "origin_default.png" ,
         "description": "The empire originates from a region of space teeming with dangerous creatures.",
-        "bonuses": [
-          {
-            "type": "army_damage",
-            "bonus": "+10%"
-          },
-          {
-            "type": "survey_speed",
-            "bonus": "+25%"
-          }
+        "empire effects":["Planetary Unification technology starts as a permanent research option"],
+        "homeworld effects": [
+          "Start with 4 additional Pops",
+          "Start with 2 additional Districts built",
+          "+15% Happiness for 20 years",
+          "+25% Amenities for 20 years",
+          "+10% Resources from Jobs for 20 years"
+        ],
+        "requirments": null 
+      },
+
+      {
+      "id": "origin_galactic_doorstep",
+      "name": "Galactic Doorstep",
+      "icon": "Origins_gateway.png",
+      "image": "origin_galactic_doorstep.png",
+      "description": "galactic doorstep",
+      "empire effects": [
+        "Start with a dormant Gateway which will bring the following in the first years: 100-1500 Alloys and/or Minerals; A small space amoeba; A special project that creates the From Gateway Sent archaeological site"
+      ],
+      "homeworld effects": null,
+      "requirments": null
+      },
+      {
+        "id": "origin_lost_colony",
+        "name": "Lost Colony",
+        "icon": "Origins_lost_colony",
+        "image": "origin_lost_colony",
+        "description": "lost colony",
+        "empire effects": [
+          "An advanced empire with the same species and random ethics will exis"
         ]
       }
       
