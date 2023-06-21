@@ -1,0 +1,288 @@
+{
+    "robotTraits": [
+        {
+            "id": "trait_machine",
+            "name": "Machine",
+            "icon": "Trait_machine.png",
+            "description": "machine",
+            "positive": true,
+            "traitPoint": 0,
+            "effects": ["Not affected by Happiness", "+200% Habitability", "Immortal Leaders"],
+            "excludesTraits": [],
+            "authority": "auth_machine_intelligence",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_mechanical",
+            "name": "Mechanical",
+            "icon": "Trait_mechanical",
+            "description": "mecha",
+            "positive": true,
+            "traitPoint": 0,
+            "effects": ["Not affected by Happiness unless the Artificial Intelligence policy is not set to Outlawed", "+200% Habitability", "Immortal Leaders", "Cannot generate Leaders without the Synthetic Personality Matrix technology"],
+            "excludesTraits": [],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_domestic_protocols",
+            "name": "Domestic Protocols",
+            "icon": "Trait_domestic_protocols",
+            "description": "domestic",
+            "positive": true,
+            "traitPoint": 2,
+            "effects": ["Can be employed in Servant jobs if udner AI Servitude", "+20% Amenities from Jobs"],
+            "traits": "trait_mechanical",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_double_jointed",
+            "name": "Double Jointed",
+            "icon": "Trait_double_jointed.pmg",
+            "description": "double joints",
+            "positive": true,
+            "traitPoint": 1,
+            "effects": ["-10% Pop Housing Usage"],
+            "excludesTraits": ["trait_bulky"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_bulky",
+            "name": "Bulky",
+            "icon": "Trait_bulky.png",
+            "description": "bulky",
+            "positive": false,
+            "traitPoint": -1,
+            "effects": ["+10% Pop Housing Usage"],
+            "excludesTraits": ["trait_double_jointed"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_durable",
+            "name": "Durable",
+            "icon": "Trait_durable.pmg",
+            "description": "durable",
+            "positive": true,
+            "traitPoint": 1,
+            "effects": ["-10% Robot Upkeep"],
+            "excludesTraits": ["trait_high_maintenance"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_high_maintenance",
+            "name": "High Maintenance",
+            "icon": "Trait_high_maintenance.png",
+            "description": "high maintenance",
+            "positive": false,
+            "traitPoint": -1,
+            "effects": ["+10% Robot Upkeep"],
+            "excludesTraits": ["trait_durable"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait__efficient_processors",
+            "name": "Efficient Processors",
+            "icon": "Trait_efficent_processors.pmg",
+            "description": "so efficent",
+            "positive": true,
+            "traitPoint": 3,
+            "effects": ["+5% Resources from Jobs"],
+            "excludesTraits": [],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_emotion_emulators",
+            "name": "Emotion Emulators",
+            "icon": "Trait_emotion_emulators.png",
+            "description": "so emotional",
+            "positive": true,
+            "traitPoint": 1,
+            "effects": ["+20% Ameneties from Jobs"],
+            "excludesTraits": ["trait_uncanny"],
+            "traits":"trait_machine",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_uncanny",
+            "name": "Uncanny",
+            "icon": "Trait_uncanny.png",
+            "description": "so scary",
+            "positive": false,
+            "traitPoint": -1,
+            "effects": ["-20% Amenities from Jobs"],
+            "excludesTraits": ["trait_emotion_emulators"],
+            "traits":"trait_machine",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_enhanced_memory",
+            "name": "Enhanced Memory",
+            "icon": "Trait_enhanced_memory.png",
+            "description": "memory",
+            "positive": true,
+            "traitPoint": 2,
+            "effects": ["-25% Leader Upkeep", "-1 Maximum Negative Leader Traits"],
+            "excludesTraits": [],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_harversters",
+            "name": "Harversters",
+            "icon": "Trait_harversters.png",
+            "description": "they harvest",
+            "positive": true,
+            "traitPoint": 2,
+            "effects": ["+15% Food from Jobs"],
+            "excludesTraits": [],
+            "traits":"trait_mechanical",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_learning_algorithms",
+            "name": "Learning Algorithms",
+            "icon": "Trait_learning_algorithms.png",
+            "description": "they learn fast",
+            "positive": true,
+            "traitPoint": 1,
+            "effects": ["+25% Leader Experience gain"],
+            "excludesTraits": ["trait_repurposed_hardware"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_repurposed_hardware",
+            "name": "Repurposed Hardware",
+            "icon": "Trait_repurposed_hardware.png",
+            "description": "recycled",
+            "positive": false,
+            "traitPoint": -1,
+            "effects": ["-25% Leader Experience Gain"],
+            "excludesTraits": ["trait_learing_algorithms"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_loyalty_circuits",
+            "name": "Loialty Circuits",
+            "icon": "Trait_loyalty_circuits.png",
+            "description": "so loyal",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["+10% Happiness"],
+            "excludesTraits": [],
+            "traits":"trait_mechanical",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_mass_produced",
+            "name": "Mass Produced",
+            "icon": "Trait_mass_produced.png",
+            "description": "mass produced",
+            "positive": true,
+            "traitPoint":1,
+            "effects": ["+15% Pop Assembly Speed"],
+            "excludesTraits": ["trait_custom_made"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_custom_made",
+            "name": "Custom Made",
+            "icon": "Trait_custom_made.png",
+            "description": "custom",
+            "positive": false,
+            "traitPoint":-1,
+            "effects": ["-15% Pop Assembly Speed"],
+            "excludesTraits": ["trait_mass_produced"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_power_drills",
+            "name": "Power Drills",
+            "icon": "Traits_power_drills.pmg",
+            "description": "power",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["+15% Minerals from Jobs"],
+            "excludesTraits": [],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_propaganda_machines",
+            "name": "Propaganda Machines",
+            "icon": "Trait_propaganda_machines.png",
+            "description": "propaganda",
+            "positive": true,
+            "traitPoint":1,
+            "effects": ["+15% Unity from Jobs"],
+            "excludesTraits": [],
+            "traits":"trait_mechanical",
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_recycled",
+            "name": "Recycled",
+            "icon": "Trait_recycled.png",
+            "description": "recycledddd",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["-20% Pop Assembly Cost"],
+            "excludesTraits": ["trait_luxurious"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_luxurious",
+            "name": "Luxurious",
+            "icon": "Trait_luxurious.png",
+            "description": "lux",
+            "positive": false,
+            "traitPoint":-2,
+            "effects": ["+20% Pop Assembly Cost"],
+            "excludesTraits": ["trait_recycled"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_streamlined_protocols",
+            "name": "Streamlined Protocols",
+            "icon": "Trait_streamlined_protocols.png",
+            "description": "streamlined protocols",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["-10% Empire Size from Pops"],
+            "excludesTraits": ["trait_high_bandwith"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_high_bandwidth",
+            "name": "High Bandwidth",
+            "icon": "Trait_high_bandwidth.png",
+            "description": "bandwidth",
+            "positive": false,
+            "traitPoint":-2,
+            "effects": ["+10 Empire Size from Pops"],
+            "excludesTraits": ["trait_streamlined_protocols"],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_superconductive",
+            "name": "Superconductive",
+            "icon": "Trait_superconductive.png",
+            "description": "super conductive",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["15% Energy Credits from Jobs"],
+            "excludesTraits": [],
+            "archetypes": ["robot"]
+          },
+          {
+            "id": "trait_trading_algorithms",
+            "name": "Trading Algorithms",
+            "icon": "Trait_trading_algorithms.png",
+            "description": "trading",
+            "positive": true,
+            "traitPoint":2,
+            "effects": ["+25% Trade Value from Jobs"],
+            "excludesTraits": [],
+            "traits":"trait_mechanical",
+            "archetypes": ["robot"]
+          }
+                                                                                                                                            
+        ]
+}
+          
