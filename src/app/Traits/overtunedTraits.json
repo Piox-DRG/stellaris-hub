@@ -1,0 +1,135 @@
+{
+    "overtunedTraits": 
+[ 
+    {
+    "id": "trait_augmented_intelligence",
+    "name": "Augmented Intelligence",
+    "icon": "Trait_artificial_intelligence.png",
+    "description": "More brains equals more brain power. Extra thinking organs have been added in strategic areas of the recipient's body to ensure maximum cognitive capacity. Even if they don't always agree.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+10% Research from Jobs", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+    
+},
+{
+    "id": "trait_crafted_smiles",
+    "name": "Crafted Smiles",
+    "icon": "Trait_crafted_smiles.png",
+    "description": "Slightly shifted facial features, a mix of enhanced and slackened muscular development - and of course outside chemicals - have created the perfect smile. Forever.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+15% Amenities form Jobs", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+},
+{
+    "id": "trait_dedicated_farmer",
+    "name": "Dedicated Farmer",
+    "icon": "Trait_crack_miner.png",
+    "description": "Supreme hand-eye coordination, near endless endurance and self-purifying lungs have created entire crack teams of miners. Sadly they get brittle without sunlight.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+15% Minerals from Jobs", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+},
+{
+    "id": "trait_expressed_tradition",
+    "name": "Expressed Tradition",
+    "icon": "Trait_expressed_tradition.png",
+    "description": "Fanaticism on demand: faith is merely a cocktail of hormones, one we have perfected. Where that faith eventually leads is a matter of subsequent guidance.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+10% Unity from Jobs", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+},{
+    "id": "trait_farm_appendages",
+    "name": "Farm Appendages",
+    "icon": "Trait_farm_hands.png",
+    "description": "The more appendages, the higher the farming output. Some appendages can even operate while their host is asleep. Rumors of hosts strangled by their new limbs have been deemed unfounded in our latest investigation.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+15% Food from Jobs", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+},{
+    "id": "trait_gene_mentorship",
+    "name": "Gene Mentorship",
+    "icon": "Trait_gene_mentorship.png",
+    "description": "By combining genetically redesigned 'instinctive knowledge' and outside chemical stimuli, we have succeeded in vastly accelerating our learning capacities. Although it has resulted in some extremely paranoid individuals.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects": ["+25% Leader Experience Gain", "-10 Leader Lifespan"],
+    "origin": "origin_overtuned"
+},
+{
+    "id":"trait_juiced_power",
+    "name":"Juiced Power",
+    "icon":"Trait_juiced_power.png",
+    "description":"Adrenaline released on demand and hyper-potent growth hormones have led to a massive increase in strength. Just ignore the occasional internal tearing.",
+    "positive":true,
+    "traitPoint":1,
+    "effects":["+40% Army Damage", "+5% Worker and Menial Drone Pop Resource Output", "-10 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trait_low_maintanance",
+    "name":"Low Maintanance",
+    "icon":"Trait_low_maintanance.png",
+    "description":"Reduced consumption, excretion, and rest rates have resulted in twice the beings for half the price. However, demand for protein-rich meals has increased.",
+    "positive": true,
+    "traitPoint":1,
+    "effects":["-10% Pop consumer goods upkeep", "-10 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trat_spliced_adaptability",
+    "name":"Spliced Adaptability",
+    "icon":"Trait_spliced_adaptability.png",
+    "description":"A few genetic snips and slices here and there and they can survive nearly anywhere. The process comes with an acceptable number of deaths from side effects.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects":["+20% Habitability", "-10 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trait_technical_talent",
+    "name":"Techincal Talent",
+    "icon":"Trait_technical_talent.png",
+    "description":"Extra internal organs grant a vastly increased innate sensitivity to electricity and magnetic fields. Reports of recipients hearing screams and voices from the reactors should be ignored.",
+    "positive": true,
+    "traitPoint": 1,
+    "effects":["+15% Energy from Jobs", "-10 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trait_elevated_synapses",
+    "name":"Elevated Synapses",
+    "icon":"Trait_elevated_synapses.png",
+    "description":"As a computational device, a brain does not run at 100% capacity. However, we have gone beyond the standard usage. If issues are encountered, try turning it off and on again.",
+    "positive":true,
+    "traitPoint":2,
+    "effects":["+20% Research from Jobs", "+20% Leader Experience Gain", "-30 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trait_preplanned_growth",
+    "name":"Pre-planned Growth",
+    "icon":"Trait_preplanned_growth.png",
+    "description":"Scheduled fertility, scheduled interest, scheduled compatibility. Population growth on demand for a strong and stable population - with a few minor edits here and there. Jealous individuals are to be directed to the nearest Fertility Center for mandatory training.",
+    "positive":true,
+    "traitPoint":2,
+    "effects":["+30% Pop Growth Speed", "-10% Pop Housing Usage", "-30 Leader Lifespan"],
+    "origin":"origin_overtuned"
+},
+{
+    "id":"trait_excessive_endurance",
+    "name":"Excessive Endurance",
+    "icon":"Trait_excessive_endurance.png",
+    "description":"The greatest in adaptability genes have been hyper-expressed in these specimens. Mutation rates around 30% indicate a somewhat stable and successful experiment.",
+    "positive":true,
+    "traitPoint":3,
+    "effects":["+5% Resources from Jobs", "+30% Habitability", "-30 Leader Lifespan"],
+    "origin":"origin_overtuned"
+}
+]
+  }
+  
