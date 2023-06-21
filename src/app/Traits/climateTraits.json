@@ -1,0 +1,247 @@
+{
+    "climateTraits":
+    [
+        {
+            "id": "trait_arid_preference",
+            "name": "Arid Preference",
+            "icon": "Trait_pc_arid_preference.png",
+            "description": "Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference": "arid",
+            "climate": "Dry",
+            "habitability": {
+              "80%": "Arid",
+              "60%": ["Desert", "Savannah"],
+              "20%": ["Alpine", "Artic", "Tundra", "Continental", "Ocean", "Tropical"]
+            }
+          },
+        {
+            "id": "trait_desert_preference",
+            "name": "Desert Preference",
+            "icon": "Trait_pc_desert_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"desert",
+            "climate":"Dry",
+            "habitability":{
+                "80%": "Desert",
+                "60%":["Arid", "Savannah"],
+                "20%":["Alpine", "Artic", "Tundra", "Continental", "Ocean", "Tropical"]
+            }
+        },
+        {
+            "id":"trait_savannah_preference",
+            "name":"Svannah Preference",
+            "icon":"Trait_pc_savannah_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"savannah",
+            "climate": "Dry",
+            "habitability":{
+                "80%":"Savannah",
+                "60%":["Arid", "Desert"],
+                "20%":["Alpine", "Artic", "Tundra", "Continental", "Ocean", "Tropical"]
+            }
+        },
+        {
+            "id":"trait_alpine_preference",
+            "name":"Alpine Preference",
+            "icon":"Trait_pc_alpine_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"alpine",
+            "climate": "Frozen",
+            "habitability":{
+                "80%":"Alpine",
+                "60%":["Artic", "Tundra"],
+                "20%":["Arid", "Desert", "Savannah", "Continental", "Ocean", "Tropical"]
+            }
+        },
+        {
+            "id":"trait_artic_preference",
+            "name":"Artic Preference",
+            "icon":"Trait_pc_artic_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"artic",
+            "climate": "Frozen",
+            "habitability":{
+                "80%":"Artic",
+                "60%":["Alpine", "Tundra"],
+                "20%":["Arid", "Desert", "Savannah", "Continental", "Ocean", "Tropical"]
+            }
+        },
+        {
+            "id":"trait_tundra_preference",
+            "name":"Tundra Preference",
+            "icon":"Trait_pc_tundra_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"tundra",
+            "climate": "Frozen",
+            "habitability":{
+                "80%":"Tundra",
+                "60%":["Alpine", "Artic"],
+                "20%":["Arid", "Desert", "Savannah", "Continental", "Ocean", "Tropical"]
+            }
+        },
+        {
+            "id":"trait_continental_preference",
+            "name":"Continental Preference",
+            "icon":"Trait_pc_continental_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"continental",
+            "climate": "Wet",
+            "habitability":{
+                "80%":"Continental",
+                "60%":["Ocean", "Tropical"],
+                "20%":["Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            }
+        },
+        {
+            "id":"trait_ocean_preference",
+            "name":"Ocean Preference",
+            "icon":"Trait_pc_ocean_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"ocean",
+            "climate": "Wet",
+            "habitability":{
+                "80%":"Ocean",
+                "60%":["Continental", "Tropical"],
+                "20%":["Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            }
+        },
+        {
+            "id":"trait_tropical_preference",
+            "name":"Tropical Preference",
+            "icon":"Trait_pc_tropical_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"tropical",
+            "climate": "Wet",
+            "habitability":{
+                "80%":"Tropical",
+                "60%":["Continental", "Ocean"],
+                
+                "20%":["Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            }
+        },
+        {
+            "id":"trait_tomb_world_preference",
+            "name":"Tomb World Preference",
+            "icon":"Trait_pc_nuked_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"tomb",
+            "climate": "",
+            "habitability":{
+                "80%":"Tomb World",
+                "60%":["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            },
+            "origin": "origin_post_apocalyptic"
+        },
+        {
+            "id":"trait_gaia_world_preference",
+            "name":"Gai World Preference",
+            "icon":"Trait_pc_gaia_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"gaia",
+            "habitability":{
+                "100%":"Gaia World",
+                "0%": ["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            },
+            "origin":"origin_life_seeded"
+        },
+        {
+            "id":"trait_ring_world_preference",
+            "name":"Ring World Preference",
+            "icon":"Trait_pc_ring_world_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"ring world",
+            "habitability":{
+                "100%":"Ring World",
+                "0%":["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"]
+            },
+            "origin":"origing_shattered_ring"
+        },
+        {
+            "id":"trait_habitat_preference",
+            "name":"Habitat Preference",
+            "icon":"Trait_pc_habitat_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"habitat",
+            "habitability":{
+                "100%":"Habitat",
+                "0%":["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"] 
+            },
+            "origin":"origin_void_dwellers"
+        },
+        {
+            "id":"trait_machine_world_preference",
+            "name":"Machine World Preference",
+            "icon":"Trait_pc_machine_world.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"machine world",
+            "habitability":{
+                "100%":"Machine World",
+                "0%":["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"] 
+            }
+        },
+        {
+            "id":"trait_relic_world_preference",
+            "name":"Relic World Preference",
+            "icon":"Trait_pc_relic_world_preference.png",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"relic world",
+            "habitability":{
+                "80%":"Relic World",
+                "0%":["Alpine", "Artic", "Tundra", "Arid", "Desert", "Savannah", "Alpine", "Artic", "Tundra"] 
+            }
+        },
+        {
+            "id":"",
+            "name":"",
+            "icon":"",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"",
+            "climate": "",
+            "habitability":{
+                "80%":"",
+                "60%":"",
+                "20%":""
+            }
+        },
+        {
+            "id":"",
+            "name":"",
+            "icon":"",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"",
+            "climate": "",
+            "habitability":{
+                "80%":"",
+                "60%":"",
+                "20%":""
+            }
+        },
+        {
+            "id":"",
+            "name":"",
+            "icon":"",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"",
+            "climate": "",
+            "habitability":{
+                "80%":"",
+                "60%":"",
+                "20%":""
+            }
+        },
+        {
+            "id":"",
+            "name":"",
+            "icon":"",
+            "description":"Climate preference is determined at a genetic level, by eons of evolution or skillfull manipulation",
+            "preference":"",
+            "climate": "",
+            "habitability":{
+                "80%":"",
+                "60%":"",
+                "20%":""
+            }
+        }
+          
+]
+}
