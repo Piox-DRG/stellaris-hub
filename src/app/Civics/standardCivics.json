@@ -1,0 +1,22 @@
+[
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "effects": [],
+      "councilPosition": {
+        "effectsPerLeaderSkillLevel": [],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    }
+  ]
+  
