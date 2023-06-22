@@ -1,27 +1,51 @@
-{ "originTraits":
-[
-  {
-    "id": "trait_serviles",
-    "name": "Serviles",
-    "icon": "Trait_primitive.png",
-    "description": "This species evolved alongside a second, more advanced species. Never particularly intelligent to begin with, selective breeding for physical prowess and docility has reduced them to servile proles.",
-    "positive": true,
-    "traitPoint": 1,
-    "effects": ["+10% Happiness", "+10% Resources from Jobs", "Cannot be employed in Ruler or Specialist Jobs", "Cannot generate leaders"],
-    "exclude": ["trait_zombie", "trait_intelligent", "trait_natural_physicists", "traits_natural_sociologists", "trait_natural_engineers"],
-    "origin": "origin_syncretic_evolution"
-  },
-  {
-    "id": "trait_clone_soldier",
-    "name": "Clone Soldier",
-    "icon": "Trait_clone_soldier.png",
-    "description": "Engineered for compliance and war: short-lived, unable to reproduce naturally, and very efficient.",
-    "positive": true,
-    "traitPoint": 0,
-    "effects": ["+50% Governing Ethics Attraction", "+50% Army Damage", "-40 years Leader Lifespan", "Admirals gain the Clone Army Admiral trait", "Cannot be genetically modified", "Cannot reproduce naturally", "Decline without sufficent Ancient Clone Vat buildings"],
-    "exclude":["trait_rapid_breeders", "trait_slow_breeders", "trait_budding", "trait_vat_grown"],
-    "origin": "origin_clone_army"
-    }, 
+{
+  "originTraits": [
+    {
+      "id": "trait_serviles",
+      "name": "Serviles",
+      "icon": "Trait_primitive.png",
+      "description": "This species evolved alongside a second, more advanced species. Never particularly intelligent to begin with, selective breeding for physical prowess and docility has reduced them to servile proles.",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": [
+        "+10% Happiness",
+        "+10% Resources from Jobs",
+        "Cannot be employed in Ruler or Specialist Jobs",
+        "Cannot generate leaders"
+      ],
+      "exclude": [
+        "trait_zombie",
+        "trait_intelligent",
+        "trait_natural_physicists",
+        "traits_natural_sociologists",
+        "trait_natural_engineers"
+      ],
+      "origin": "origin_syncretic_evolution"
+    },
+    {
+      "id": "trait_clone_soldier",
+      "name": "Clone Soldier",
+      "icon": "Trait_clone_soldier.png",
+      "description": "Engineered for compliance and war: short-lived, unable to reproduce naturally, and very efficient.",
+      "positive": true,
+      "traitPoint": 0,
+      "effects": [
+        "+50% Governing Ethics Attraction",
+        "+50% Army Damage",
+        "-40 years Leader Lifespan",
+        "Admirals gain the Clone Army Admiral trait",
+        "Cannot be genetically modified",
+        "Cannot reproduce naturally",
+        "Decline without sufficent Ancient Clone Vat buildings"
+      ],
+      "exclude": [
+        "trait_rapid_breeders",
+        "trait_slow_breeders",
+        "trait_budding",
+        "trait_vat_grown"
+      ],
+      "origin": "origin_clone_army"
+    },
     {
       "id": "trait_survivor",
       "name": "Survivor",
@@ -39,9 +63,14 @@
       "description": "This species thrives in orbital habitats, with an instinctive ability to efficiently navigate their maze-like corridors and complicated architecture. However their weakened immune systems do not respond well to a planetary environment.",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+15% Pop Output on Habitats", "-15% Pop Output on Planets", "-10% Pop Growth Speed", "-30% Pop Happiness on Planets"],
+      "effects": [
+        "+15% Pop Output on Habitats",
+        "-15% Pop Output on Planets",
+        "-10% Pop Growth Speed",
+        "-30% Pop Happiness on Planets"
+      ],
       "origin": "orign_void_dwellers"
-      },
+    },
     {
       "id": "trait_necrophage",
       "name": "Necrophage",
@@ -49,10 +78,17 @@
       "description": "This species of near-immortals procreates by consuming pops of other species",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+80 Years Leader Lifespan", "-50% Pop Upkeep", "+5% Resources from Ruler and Specialist Jobs", "-10% Resources from Worker Jobs", "-75% Pop Growth Speed", "-50% Pop assembly speed"],
-      "exclude":["trait_budding", "trait_vat_grown"],
+      "effects": [
+        "+80 Years Leader Lifespan",
+        "-50% Pop Upkeep",
+        "+5% Resources from Ruler and Specialist Jobs",
+        "-10% Resources from Worker Jobs",
+        "-75% Pop Growth Speed",
+        "-50% Pop assembly speed"
+      ],
+      "exclude": ["trait_budding", "trait_vat_grown"],
       "origin": "origin_necrophage"
-      },
+    },
 
     {
       "id": "trait_cave_dweller",
@@ -61,10 +97,15 @@
       "description": "This species thrives under the surface of any planet they can find, at the cost of population growth",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+50% Species Minimum Habitability", "+15% Minerals from Jobs", "-20% Biological Pop Growth Speed", "+10% Empire Size from Pops"],
-      "exclude":["trait_phototrophic", "trait_aquatic"],
+      "effects": [
+        "+50% Species Minimum Habitability",
+        "+15% Minerals from Jobs",
+        "-20% Biological Pop Growth Speed",
+        "+10% Empire Size from Pops"
+      ],
+      "exclude": ["trait_phototrophic", "trait_aquatic"],
       "origin": "origin_subterranean"
-      },
+    },
     {
       "id": "trait_perfected_genes",
       "name": "Perfected Genes",
@@ -73,7 +114,7 @@
       "positive": true,
       "traitPoint": 0,
       "effects": ["+25 Years Leader Lifespan", "-15% Leader Experience Gain"],
-      "exclude":["trait_fleeting", "trait_weak"],
+      "exclude": ["trait_fleeting", "trait_weak"],
       "origin": "origin_under_one_rule"
     },
     {
@@ -83,9 +124,13 @@
       "description": "This species has embraced cybernetics on such a scale that its members may be considered cyborgs. They routinely replace their organic body parts with more advanced mechanical versions.",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+10% Army Damage", "+20% Habitability", "+40 years Leader Lifespan"],
-      "exclude":["trait_latent_psisonic"],
-      "civic":"civic_driven_assimilator" 
+      "effects": [
+        "+10% Army Damage",
+        "+20% Habitability",
+        "+40 years Leader Lifespan"
+      ],
+      "exclude": ["trait_latent_psisonic"],
+      "civic": "civic_driven_assimilator"
     },
     {
       "id": "trait_latent_psionic",
@@ -94,8 +139,12 @@
       "description": "This species has latent psionic abilities, which are dormant in most of its members. Although quite rare, these powers will manifest in some leaders.",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+10 Research from Jobs", "+5 Unity from Jobs", "Leaders have a chance to gain the Psychic trait"],
-      "exclude":["trait_cybernetic"],
+      "effects": [
+        "+10 Research from Jobs",
+        "+5 Unity from Jobs",
+        "Leaders have a chance to gain the Psychic trait"
+      ],
+      "exclude": ["trait_cybernetic"],
       "origin": "origin_teachers_of_the_shroud"
     },
     {
@@ -105,10 +154,19 @@
       "description": "This species is made up of semi-autonomous individuals slaved to a single, unfathomably vast consciousness",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["Not affected by Happiness", "+20 years Leader Lifespan", "-10 years Leader Initial Age"],
-      "exclude":["trait_thrifty", "trait_conformists", "trait_deviant", "trait_decadent"],
-      "authority":"authority_hive_mind"
-      },
+      "effects": [
+        "Not affected by Happiness",
+        "+20 years Leader Lifespan",
+        "-10 years Leader Initial Age"
+      ],
+      "exclude": [
+        "trait_thrifty",
+        "trait_conformists",
+        "trait_deviant",
+        "trait_decadent"
+      ],
+      "authority": "authority_hive_mind"
+    },
     {
       "id": "trait_aquatic",
       "name": "Aquatic",
@@ -116,10 +174,17 @@
       "description": "This species is perfectly adapted to living in the depths of the ocean. However, on dry land, it is like a fish out of water.",
       "positive": true,
       "traitPoint": 2,
-      "effects": ["+20 Ocean Habitability", "-10% Housing usage on Ocean Worlds", "+10% Worker Output on Ocean Worlds", "-20% Dry and Frozen planet Habitability", "+30% Housing usage on Dry and Frozen planets", "Hydrocentric ascension boosts this trait's effects by 50%"],
-      "origin":"origin_ocean_paradise",
-      "civic":"civic_anglers"
-      },
+      "effects": [
+        "+20 Ocean Habitability",
+        "-10% Housing usage on Ocean Worlds",
+        "+10% Worker Output on Ocean Worlds",
+        "-20% Dry and Frozen planet Habitability",
+        "+30% Housing usage on Dry and Frozen planets",
+        "Hydrocentric ascension boosts this trait's effects by 50%"
+      ],
+      "origin": "origin_ocean_paradise",
+      "civic": "civic_anglers"
+    },
     {
       "id": "trait_stargazer",
       "name": "Stargazer",
@@ -127,11 +192,12 @@
       "description": "This species has always, consciously or not, longed to traverse the void between the stars",
       "positive": true,
       "traitPoint": 0,
-      "effects": ["+10% Habitability", "25% Pop Growth from Immigration", "-25% Resettlement Cost"],
-      "civic":"civic_stargazers"
-      }
-    ]
-  }
-            
-  
-
+      "effects": [
+        "+10% Habitability",
+        "25% Pop Growth from Immigration",
+        "-25% Resettlement Cost"
+      ],
+      "civic": "civic_stargazers"
+    }
+  ]
+}

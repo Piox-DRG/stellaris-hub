@@ -1,41 +1,52 @@
 {
-    "botanicalTraits":
-    [
-{
-    "id": "trait_phototrophic",
-    "name": "Phototrophic",
-    "icon": "Trait_plantoid_phototrophic",
-    "description": "This species is sustained by a combination of both food and sunlight.",
-    "positive": true,
-    "traitPoint": 1,
-    "effects": ["Replaces half of the Food upkeep with Energy"],
-    "archetypes": ["fungoid", "plantoid"],
-    "excludesTraits": ["trait_radiotrophic", "trait_cave_dweller", "trait_voidling"]
-},
-{
-    "id": "trait_radiotrophic",
-    "name": "Radiotrophic",
-    "icon": "Trait_plantoid_radiotrophic",
-    "description": "This species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.",
-    "positive": true,
-    "traitPoint": 2,
-    "effects": ["Replaces half of the Food or Minerals upkeep with Energy", "No Energy upkeep on Tomb Worlds", "+10 Tomb World Pop Growth Speed", "+10% Tomb World Habitability"],
-    "archetypes": ["lithoid"],
-    "excludesTraits":["trait_phototrophic", "trait_voidling"]
-  },
-  {
-    "id": "trait_budding",
-    "name": "Budding",
-    "icon": "Trait_plantoid_budding",
-    "description": "This species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.",
-    "positive": true,
-    "traitPoint": 2,
-    "effects": ["+0.02 Monthly Organic Pop Assembly per Pop"],
-    "archetypes": ["fungoid", "plantoid"],
-    "excludesTraits":["trait_slow_breeders", "trait_rapid_breeders", "trait_incubators", "trait_clone_soldier", "trait_necrophage"]
-  }
-  
-  
-    ]
+  "botanicalTraits": [
+    {
+      "id": "trait_phototrophic",
+      "name": "Phototrophic",
+      "icon": "Trait_plantoid_phototrophic",
+      "description": "This species is sustained by a combination of both food and sunlight.",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["Replaces half of the Food upkeep with Energy"],
+      "archetypes": ["fungoid", "plantoid"],
+      "excludesTraits": [
+        "trait_radiotrophic",
+        "trait_cave_dweller",
+        "trait_voidling"
+      ]
+    },
+    {
+      "id": "trait_radiotrophic",
+      "name": "Radiotrophic",
+      "icon": "Trait_plantoid_radiotrophic",
+      "description": "This species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": [
+        "Replaces half of the Food or Minerals upkeep with Energy",
+        "No Energy upkeep on Tomb Worlds",
+        "+10 Tomb World Pop Growth Speed",
+        "+10% Tomb World Habitability"
+      ],
+      "archetypes": ["lithoid"],
+      "excludesTraits": ["trait_phototrophic", "trait_voidling"]
+    },
+    {
+      "id": "trait_budding",
+      "name": "Budding",
+      "icon": "Trait_plantoid_budding",
+      "description": "This species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+0.02 Monthly Organic Pop Assembly per Pop"],
+      "archetypes": ["fungoid", "plantoid"],
+      "excludesTraits": [
+        "trait_slow_breeders",
+        "trait_rapid_breeders",
+        "trait_incubators",
+        "trait_clone_soldier",
+        "trait_necrophage"
+      ]
+    }
+  ]
 }
-  

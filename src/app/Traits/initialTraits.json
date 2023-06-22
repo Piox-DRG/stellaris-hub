@@ -1,463 +1,394 @@
 {
-    "initialTraits": [
-      {
-        "id": "trait_adaptive",
-        "name": "Adaptive",
-        "icon": "Adaptive.png",
-        "description": "Adaptive description",
-        "mutuallyExclusiveWith": ["trait_extremely_adaptive", "trait_nonadaptive"],
-        "upgradedTrait": "trait_extremely_adaptive",
-        "positive":true,
-        "trait point": 2,
-        "effects": [ 
-          "+10 Habitability"
-      ]
-      },
+  "initialTraits": [
+    {
+      "id": "trait_adaptive",
+      "name": "Adaptive",
+      "icon": "Adaptive.png",
+      "description": "Adaptive description",
+      "mutuallyExclusiveWith": [
+        "trait_extremely_adaptive",
+        "trait_nonadaptive"
+      ],
+      "upgradedTrait": "trait_extremely_adaptive",
+      "positive": true,
+      "trait point": 2,
+      "effects": ["+10 Habitability"]
+    },
 
-      {
-        "id": "trait_extremely_adaptive",
-        "name": "Extremely Adaptive",
-        "icon": "Extremely_Adaptive.png",
-        "description": "Extremely Adaptive description",
-        "mutuallyExclusiveWith": ["trait_adaptive", "trait_nonadaptive"],
-        "positive": true,
-        "trait point": 4,
-        "effects": [ 
-          "+20 Habitability"
-      ]
-      },
+    {
+      "id": "trait_extremely_adaptive",
+      "name": "Extremely Adaptive",
+      "icon": "Extremely_Adaptive.png",
+      "description": "Extremely Adaptive description",
+      "mutuallyExclusiveWith": ["trait_adaptive", "trait_nonadaptive"],
+      "positive": true,
+      "trait point": 4,
+      "effects": ["+20 Habitability"]
+    },
 
-      {"id": "trait_nonadaptive",
+    {
+      "id": "trait_nonadaptive",
       "name": "Nonadaptive",
       "icon": "Nonadaptive.png",
       "description": "nonadaptive description",
       "mutuallyExclusiveWith": ["trait_adaptive", "trait_extremely_adaptive"],
       "positive": false,
       "trait point": -2,
-      "effects": [ 
-        "-10 Habitability"
-    ]     
-      },
+      "effects": ["-10 Habitability"]
+    },
 
-      {
-        "id": "trait_agrarian",
-        "name": "Agrarian",
-        "icon": "Agrarian.png",
-        "description": "agrarian desc",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+15% Food from Jobs"
-        ]
-      },
+    {
+      "id": "trait_agrarian",
+      "name": "Agrarian",
+      "icon": "Agrarian.png",
+      "description": "agrarian desc",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+15% Food from Jobs"]
+    },
 
-      {
-        "id": "trait_charismatic",
-        "name": "Charismatic",
-        "icon": "Charismatic.png",
-        "description": "charismatic description",
-        "mutuallyExclusiveWith":"trait_repugnant",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+20% Amenities from Jobs"
-        ]
-      },
-      {
-        "id": "trait_repugnant",
-        "name": "Repugnant",
-        "icon": "Repugnant.png",
-        "description": "repugnant description",
-        "mutuallyExclusiveWith":"trait_charismatic",
-        "positive": false,
-        "traitPoint": -2,
-        "effects": [
-          "-20% Amenities from Jobs "
-        ]
-      },
-      {
-        "id": "trait_communal",
-        "name": "Communal",
-        "icon": "Communal.png",
-        "description": "communal trait",
-        "mutuallyExclusiveWith":"trait_solitary",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "-10% Pop Housing Usage"
-        ]
-      },
-      {
-        "id": "trait_solitary",
-        "name": "Solitary",
-        "icon": "Solitary.png",
-        "description": "solitary des",
-        "mutuallyExclusiveWith":"trait_communal",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "+10% Pop Housing Usage"
-        ]
-      },
-      {
-        "id": "trait_conformists",
-        "name": "Conformists",
-        "icon": "Conformists.png",
-        "description": "conf description",
-        "mutuallyExclusiveWith":"trait_deviants",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+30% Governing Ethics Attraction"
-        ]
-      },
-      {
-        "id": "trait_deviants",
-        "name": "Deviants",
-        "icon": "Deviants.png",
-        "description": "Deviants description",
-        "mutuallyExclusiveWith":"trait_conformists",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-15% Governing Ethics Attraction"
-        ]
-      },
-      {
-        "id": "trait_conservationist",
-        "name": "Conservationist",
-        "icon": "Conservationist.png",
-        "description": "cons description",
-        "mutuallyExclusiveWith":"trait_wasteful",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "-10% Pop consumer goods upkeep "
-        ]
-      },
-      {
-        "id": "trait_wasteful",
-        "name": "Wasteful",
-        "icon": "Wasteful.png",
-        "description": "they do waste",
-        "mutuallyExclusiveWith":"trait_conservationist",
-        "positive": false,
-        "traitPoint": 0,
-        "effects": []
-      },
-      {
-        "id": "trait_docile",
-        "name": "Docile",
-        "icon": "Docile.png",
-        "description": "docile description",
-        "mutuallyExclusiveWith":"trait_unruly",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "-10% Empire Size from Pops"
-        ]
-      },
-      {
-        "id": "trait_unruly",
-        "name": "Unruly",
-        "icon": "Unruly.png",
-        "description": "unruly desc",
-        "mutuallyExclusiveWith":"trait_docile",
-        "positive": false,
-        "traitPoint": -2,
-        "effects": [
-          "+10% Empire Size from Pops"
-        ]
-      },
-      {
-        "id": "trait_enduring",
-        "name": "Enduring",
-        "icon": "Enduring.png",
-        "description": "enduring desc",
-        "mutuallyExclusiveWith": ["trait_venerable", "trait_fleeting"],
-        "upgradedTrait": "trait_venerable",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+20 years Leader Lifespan"
-        ]
-      },
-      {
-        "id": "trait_venerable",
-        "name": "Venerable",
-        "icon": "Venerable.png",
-        "description": "venerable desc",
-        "mutuallyExclusiveWith": ["trait_enduring", "trait_fleeting"],
-        "positive": true,
-        "traitPoint": 4,
-        "effects": [
-          "+80 years Leader Lifespan"
-        ]
-      },
-      {
-        "id": "trait_fleeting",
-        "name": "Fleeting",
-        "icon": "Fleeting.png",
-        "description": "fleeting desc",
-        "mutuallyExclusiveWith": ["trait_enduring", "trait_venerable"],
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-10 years Leader Lifespan if Biological/-25 years Leader Lifespan if Lithoid"
-        ]
-      },
-      {
-        "id": "trait_industrious",
-        "name": "Industrious",
-        "icon": "Industrious.png",
-        "description": "descriptinon",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+15% Minerals from Jobs"
-        ]
-      },
-      {
-        "id": "trait_ingenious",
-        "name": "Ingenious",
-        "icon": "Ingenious.png",
-        "description": "this is a trait",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+15% Energy Credits from Jobs"
-        ]
-      },
-      {
-        "id": "trait_intelligent",
-        "name": "Intelligent",
-        "icon": "Intelligent.png",
-        "description": "so smart",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+10% Research from Jobs"
-        ]
-      },
-      {
-        "id": "trait_natural_engineers",
-        "name": "Natural Engineers",
-        "icon": "Natural Engineers.png",
-        "description": "smaart",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+15% Engineering Research from Jobs"
-        ]
-      },
-      {
-        "id": "trait_natural_physicists",
-        "name": "Natural Physicists",
-        "icon": "Natural_Physicists.png",
-        "description": "Physicists",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+15% Physics Research from Jobs"
-        ]
-      },
-      {
-        "id": "traits_natural_sociologists",
-        "name": "Natural Sociologists",
-        "icon": "Natural_Sociologists.png",
-        "description": "sociology is nice",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "15% Society Research from Jobs"
-        ]
-      },
-      {
-        "id": "trait_nomadic",
-        "name": "Nomadic",
-        "icon": "Nomadic.png",
-        "description": "they go",
-        "mutuallyExclusiveWith":"trait_sedentary",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+15% Pop growth from immigration",
-          "-25% Resettlemnt Cost"
-        ]
-      },
-      {
-        "id": "trait_sedentary",
-        "name": "Sedentary",
-        "icon": "Sedentary.png",
-        "description": "they don't go",
-        "mutuallyExclusiveWith":"trait_nomadic",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-15% Pop growth from immigration",
-          "+25% Resettlement Cost"
-        ]
-      },
-      {
-        "id": "trait_quick_learners",
-        "name": "Quick Learners",
-        "icon": "Quick_learners.png",
-        "description": "they're smart af",
-        "mutuallyExclusiveWith":"trait_slow_learners",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+10% Leader Experience Gain"
-        ]
-      },
-      {
-        "id": "trait_slow_learners",
-        "name": "Slow Learners",
-        "icon": "Slow_learners.png",
-        "description": "they're dumb af",
-        "mutuallyExclusiveWith":"trait_quick_learners",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-10% Leader Experience Gain"
-        ]
-      },
-      {
-        "id": "trait_rapid_breeders",
-        "name": "Rapid Breeders",
-        "icon": "Rapid_breeders.png",
-        "mutuallyExclusiveWith":"trait_slow_breeders",
-        "description": "so much",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+10% Growth Speed"
-        ]
-      },
-      {
-        "id": "trait_slow_breders",
-        "name": "Slow Breeders",
-        "icon": "Slow_breeders.png",
-        "mutuallyExclusiveWith":"trait_rapid_breeders",
-        "description": "so slow",
-        "positive": false,
-        "traitPoint": -2,
-        "effects": [
-          "-10% Growth Speed"
-        ]
-      },
-      {
-        "id": "trait_resilient",
-        "name": "Resilient",
-        "icon": "Resilient.png",
-        "description": "they resist",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+50% Defense Army Damage"
-        ]
-      },
-      {
-        "id": "trait_strong",
-        "name": "Strong",
-        "icon": "Strong.png",
-        "description": "strong af",
-        "mutuallyExclusiveWith":["trait_very_strong","trait_weak"],
-        "upgradedTrait": "trait_very_strong",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+20% Army Damage",
-          "+2.5% Worker and Menial Drone Pop Resource Output"
-        ]
-      },
-      {
-        "id": "trait_very_strong",
-        "name": "Very Strong",
-        "icon": "Very_strong.png",
-        "description": "stronggg",
-        "mutuallyExclusiveWith":["trait_strong","trait_weak"],
-        "positive": true,
-        "traitPoint": 3,
-        "effects": [
-          "+40% Army Damage",
-          "+5% Worker and Menial Drone Pop Resource Output"
-        ]
-      },
-      {
-        "id": "trait_weak",
-        "name": "Weak",
-        "icon": "Weak.png",
-        "description": "so weak",
-        "mutuallyExclusiveWith":["trait_strong","trait_very_strong"],
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-20 Army Damage",
-          "-2.5% Worker and Menial Drone Pop Resource Output"
-        ]
-      },
-      {
-        "id": "trait_talented",
-        "name": "Talented",
-        "icon": "Talented.png",
-        "description": "they got talent",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "Leader Upkeep: -10%",
-          "Leader Maximum Negative Traits: -1"
-        ]
-      },
-      {
-        "id": "trait_thrifty",
-        "name": "Thrifty",
-        "icon": "Thrifty.png",
-        "description": "caaash",
-        "positive": true,
-        "traitPoint": 2,
-        "effects": [
-          "+25% Trade value from Jobs"
-        ]
-      },
-      {
-        "id": "trait_traditional",
-        "name": "Traditional",
-        "icon": "Traditional.png",
-        "description": "my traditions",
-        "mutuallyExclusiveWith":"trait_quarellsome",
-        "positive": true,
-        "traitPoint": 1,
-        "effects": [
-          "+10% Unity from Jobs"
-        ]
-      },
-      {
-        "id": "trait_quarellsome",
-        "name": "Quarellsome",
-        "icon": "Quarellsome.png",
-        "description": "they get in trouble",
-        "mutuallyExclusiveWith":"trait_traditional",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-10% Unity from Jobs"
-        ]
-      },
-      {
-        "id": "trait_decadent",
-        "name": "Decadent",
-        "icon": "Decadent.png",
-        "description": "descriiiiption",
-        "positive": false,
-        "traitPoint": -1,
-        "effects": [
-          "-10% Worker Happiness",
-          "-10% Slave Happiness"
-        ]
-      }
-        ]
-
-      }
- 
-  
+    {
+      "id": "trait_charismatic",
+      "name": "Charismatic",
+      "icon": "Charismatic.png",
+      "description": "charismatic description",
+      "mutuallyExclusiveWith": "trait_repugnant",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+20% Amenities from Jobs"]
+    },
+    {
+      "id": "trait_repugnant",
+      "name": "Repugnant",
+      "icon": "Repugnant.png",
+      "description": "repugnant description",
+      "mutuallyExclusiveWith": "trait_charismatic",
+      "positive": false,
+      "traitPoint": -2,
+      "effects": ["-20% Amenities from Jobs "]
+    },
+    {
+      "id": "trait_communal",
+      "name": "Communal",
+      "icon": "Communal.png",
+      "description": "communal trait",
+      "mutuallyExclusiveWith": "trait_solitary",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["-10% Pop Housing Usage"]
+    },
+    {
+      "id": "trait_solitary",
+      "name": "Solitary",
+      "icon": "Solitary.png",
+      "description": "solitary des",
+      "mutuallyExclusiveWith": "trait_communal",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["+10% Pop Housing Usage"]
+    },
+    {
+      "id": "trait_conformists",
+      "name": "Conformists",
+      "icon": "Conformists.png",
+      "description": "conf description",
+      "mutuallyExclusiveWith": "trait_deviants",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+30% Governing Ethics Attraction"]
+    },
+    {
+      "id": "trait_deviants",
+      "name": "Deviants",
+      "icon": "Deviants.png",
+      "description": "Deviants description",
+      "mutuallyExclusiveWith": "trait_conformists",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["-15% Governing Ethics Attraction"]
+    },
+    {
+      "id": "trait_conservationist",
+      "name": "Conservationist",
+      "icon": "Conservationist.png",
+      "description": "cons description",
+      "mutuallyExclusiveWith": "trait_wasteful",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["-10% Pop consumer goods upkeep "]
+    },
+    {
+      "id": "trait_wasteful",
+      "name": "Wasteful",
+      "icon": "Wasteful.png",
+      "description": "they do waste",
+      "mutuallyExclusiveWith": "trait_conservationist",
+      "positive": false,
+      "traitPoint": 0,
+      "effects": []
+    },
+    {
+      "id": "trait_docile",
+      "name": "Docile",
+      "icon": "Docile.png",
+      "description": "docile description",
+      "mutuallyExclusiveWith": "trait_unruly",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["-10% Empire Size from Pops"]
+    },
+    {
+      "id": "trait_unruly",
+      "name": "Unruly",
+      "icon": "Unruly.png",
+      "description": "unruly desc",
+      "mutuallyExclusiveWith": "trait_docile",
+      "positive": false,
+      "traitPoint": -2,
+      "effects": ["+10% Empire Size from Pops"]
+    },
+    {
+      "id": "trait_enduring",
+      "name": "Enduring",
+      "icon": "Enduring.png",
+      "description": "enduring desc",
+      "mutuallyExclusiveWith": ["trait_venerable", "trait_fleeting"],
+      "upgradedTrait": "trait_venerable",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["+20 years Leader Lifespan"]
+    },
+    {
+      "id": "trait_venerable",
+      "name": "Venerable",
+      "icon": "Venerable.png",
+      "description": "venerable desc",
+      "mutuallyExclusiveWith": ["trait_enduring", "trait_fleeting"],
+      "positive": true,
+      "traitPoint": 4,
+      "effects": ["+80 years Leader Lifespan"]
+    },
+    {
+      "id": "trait_fleeting",
+      "name": "Fleeting",
+      "icon": "Fleeting.png",
+      "description": "fleeting desc",
+      "mutuallyExclusiveWith": ["trait_enduring", "trait_venerable"],
+      "positive": false,
+      "traitPoint": -1,
+      "effects": [
+        "-10 years Leader Lifespan if Biological/-25 years Leader Lifespan if Lithoid"
+      ]
+    },
+    {
+      "id": "trait_industrious",
+      "name": "Industrious",
+      "icon": "Industrious.png",
+      "description": "descriptinon",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+15% Minerals from Jobs"]
+    },
+    {
+      "id": "trait_ingenious",
+      "name": "Ingenious",
+      "icon": "Ingenious.png",
+      "description": "this is a trait",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+15% Energy Credits from Jobs"]
+    },
+    {
+      "id": "trait_intelligent",
+      "name": "Intelligent",
+      "icon": "Intelligent.png",
+      "description": "so smart",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+10% Research from Jobs"]
+    },
+    {
+      "id": "trait_natural_engineers",
+      "name": "Natural Engineers",
+      "icon": "Natural Engineers.png",
+      "description": "smaart",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+15% Engineering Research from Jobs"]
+    },
+    {
+      "id": "trait_natural_physicists",
+      "name": "Natural Physicists",
+      "icon": "Natural_Physicists.png",
+      "description": "Physicists",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+15% Physics Research from Jobs"]
+    },
+    {
+      "id": "traits_natural_sociologists",
+      "name": "Natural Sociologists",
+      "icon": "Natural_Sociologists.png",
+      "description": "sociology is nice",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["15% Society Research from Jobs"]
+    },
+    {
+      "id": "trait_nomadic",
+      "name": "Nomadic",
+      "icon": "Nomadic.png",
+      "description": "they go",
+      "mutuallyExclusiveWith": "trait_sedentary",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["+15% Pop growth from immigration", "-25% Resettlemnt Cost"]
+    },
+    {
+      "id": "trait_sedentary",
+      "name": "Sedentary",
+      "icon": "Sedentary.png",
+      "description": "they don't go",
+      "mutuallyExclusiveWith": "trait_nomadic",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["-15% Pop growth from immigration", "+25% Resettlement Cost"]
+    },
+    {
+      "id": "trait_quick_learners",
+      "name": "Quick Learners",
+      "icon": "Quick_learners.png",
+      "description": "they're smart af",
+      "mutuallyExclusiveWith": "trait_slow_learners",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["+10% Leader Experience Gain"]
+    },
+    {
+      "id": "trait_slow_learners",
+      "name": "Slow Learners",
+      "icon": "Slow_learners.png",
+      "description": "they're dumb af",
+      "mutuallyExclusiveWith": "trait_quick_learners",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["-10% Leader Experience Gain"]
+    },
+    {
+      "id": "trait_rapid_breeders",
+      "name": "Rapid Breeders",
+      "icon": "Rapid_breeders.png",
+      "mutuallyExclusiveWith": "trait_slow_breeders",
+      "description": "so much",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+10% Growth Speed"]
+    },
+    {
+      "id": "trait_slow_breders",
+      "name": "Slow Breeders",
+      "icon": "Slow_breeders.png",
+      "mutuallyExclusiveWith": "trait_rapid_breeders",
+      "description": "so slow",
+      "positive": false,
+      "traitPoint": -2,
+      "effects": ["-10% Growth Speed"]
+    },
+    {
+      "id": "trait_resilient",
+      "name": "Resilient",
+      "icon": "Resilient.png",
+      "description": "they resist",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["+50% Defense Army Damage"]
+    },
+    {
+      "id": "trait_strong",
+      "name": "Strong",
+      "icon": "Strong.png",
+      "description": "strong af",
+      "mutuallyExclusiveWith": ["trait_very_strong", "trait_weak"],
+      "upgradedTrait": "trait_very_strong",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": [
+        "+20% Army Damage",
+        "+2.5% Worker and Menial Drone Pop Resource Output"
+      ]
+    },
+    {
+      "id": "trait_very_strong",
+      "name": "Very Strong",
+      "icon": "Very_strong.png",
+      "description": "stronggg",
+      "mutuallyExclusiveWith": ["trait_strong", "trait_weak"],
+      "positive": true,
+      "traitPoint": 3,
+      "effects": [
+        "+40% Army Damage",
+        "+5% Worker and Menial Drone Pop Resource Output"
+      ]
+    },
+    {
+      "id": "trait_weak",
+      "name": "Weak",
+      "icon": "Weak.png",
+      "description": "so weak",
+      "mutuallyExclusiveWith": ["trait_strong", "trait_very_strong"],
+      "positive": false,
+      "traitPoint": -1,
+      "effects": [
+        "-20 Army Damage",
+        "-2.5% Worker and Menial Drone Pop Resource Output"
+      ]
+    },
+    {
+      "id": "trait_talented",
+      "name": "Talented",
+      "icon": "Talented.png",
+      "description": "they got talent",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["Leader Upkeep: -10%", "Leader Maximum Negative Traits: -1"]
+    },
+    {
+      "id": "trait_thrifty",
+      "name": "Thrifty",
+      "icon": "Thrifty.png",
+      "description": "caaash",
+      "positive": true,
+      "traitPoint": 2,
+      "effects": ["+25% Trade value from Jobs"]
+    },
+    {
+      "id": "trait_traditional",
+      "name": "Traditional",
+      "icon": "Traditional.png",
+      "description": "my traditions",
+      "mutuallyExclusiveWith": "trait_quarellsome",
+      "positive": true,
+      "traitPoint": 1,
+      "effects": ["+10% Unity from Jobs"]
+    },
+    {
+      "id": "trait_quarellsome",
+      "name": "Quarellsome",
+      "icon": "Quarellsome.png",
+      "description": "they get in trouble",
+      "mutuallyExclusiveWith": "trait_traditional",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["-10% Unity from Jobs"]
+    },
+    {
+      "id": "trait_decadent",
+      "name": "Decadent",
+      "icon": "Decadent.png",
+      "description": "descriiiiption",
+      "positive": false,
+      "traitPoint": -1,
+      "effects": ["-10% Worker Happiness", "-10% Slave Happiness"]
+    }
+  ]
+}

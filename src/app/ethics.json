@@ -1,21 +1,77 @@
 {
-    "ethics": [
-      {
-        "id": "ethic_authoritarian",
-        "name": "Authoritarian",
-        "description": "This empire favors a centralized and authoritarian government.",
-        "bonuses": [
+        "ethics": [
           {
-            "type": "pop_happiness",
-            "bonus": "+5%"
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
           },
           {
-            "type": "slave_production",
-            "bonus": "+10%"
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "icon": "",
+            "bonuses": [],
+            "principles": "",
+            "ethicPoints": 0
           }
-        ]
-      }
-      
-    ]
-  }
   
+  ]
+}

@@ -1,92 +1,145 @@
 {
-    "authorities": [
-    {"id": "auth_democratic",
-    "name": "Democratic",
-    "icon": "Auth_democratic.png",
-    "description": "Democratic governments have regular elections where all citizens can vote on who should represent them.",
-    "rulerTerm": "10 years",
-    "empireEffects": ["+10% Faction Approval", "Resets Government Reform when ruler changes", "Resets Party Cooldowns when ruler changes", "Re-election"],
-    "rulerEffects": ["+5 Editcs Fund", "+2% Faction Unity Bonus"],
-    "requirements": {
-      "ethicsNot": ["ethic_authoritarian", "ethic_fanatic_authoritarian", "ethic_gestalt_counciousness"]}
+  "authorities": [
+    {
+      "id": "auth_democratic",
+      "name": "Democratic",
+      "icon": "Auth_democratic.png",
+      "description": "Democratic governments have regular elections where all citizens can vote on who should represent them.",
+      "rulerTerm": "10 years",
+      "empireEffects": [
+        "+10% Faction Approval",
+        "Resets Government Reform when ruler changes",
+        "Resets Party Cooldowns when ruler changes",
+        "Re-election"
+      ],
+      "rulerEffects": ["+5 Editcs Fund", "+2% Faction Unity Bonus"],
+      "requirements": {
+        "ethicsNot": [
+          "ethic_authoritarian",
+          "ethic_fanatic_authoritarian",
+          "ethic_gestalt_counciousness"
+        ]
+      }
     },
     {
-        "id": "auth_oligarhic",
-        "name": "Oligarhic",
-        "icon": "Auth_oligarhic.png",
-        "description": "Oligarchic governments are ruled by a small group of individuals that hold all political power.",
-        "rulerTerm": "20 years",
-        "empireEffects": ["Can have Emergency Elections", "+2 Effective Councilor Skill"],
-        "rulerEffects": ["+5 Editcs Fund", "+5% Councilor Experience Gain"],
-        "requirements": {
-          "ethicsNot": ["ethic_fanatic_authoritarian", "ethic_fanatic_egalitarian", "ethic_gestalt_counciousness"]
-         }
-        },
+      "id": "auth_oligarhic",
+      "name": "Oligarhic",
+      "icon": "Auth_oligarhic.png",
+      "description": "Oligarchic governments are ruled by a small group of individuals that hold all political power.",
+      "rulerTerm": "20 years",
+      "empireEffects": [
+        "Can have Emergency Elections",
+        "+2 Effective Councilor Skill"
+      ],
+      "rulerEffects": ["+5 Editcs Fund", "+5% Councilor Experience Gain"],
+      "requirements": {
+        "ethicsNot": [
+          "ethic_fanatic_authoritarian",
+          "ethic_fanatic_egalitarian",
+          "ethic_gestalt_counciousness"
+        ]
+      }
+    },
     {
-        "id": "auth_dictatorial",
-        "name": "Dictatorial",
-        "icon": "Auth_dictatorial.png",
-        "description": "Dictatorial governments are ruled by a single individual for life that wields absolute control over the state.",
-        "rulerTerm": "Life",
-        "empireEffects": [],
-        "rulerEffects": ["+10 Edicts Fund", "-2 Pop Amenities Usage"],
-        "requirements": {
-          "ethicsNot": ["ethic_egalitarian", "ethic_fanatic_egalitarian", "ethic_gestalt_counciousness"]
-         }
-        },
+      "id": "auth_dictatorial",
+      "name": "Dictatorial",
+      "icon": "Auth_dictatorial.png",
+      "description": "Dictatorial governments are ruled by a single individual for life that wields absolute control over the state.",
+      "rulerTerm": "Life",
+      "empireEffects": [],
+      "rulerEffects": ["+10 Edicts Fund", "-2 Pop Amenities Usage"],
+      "requirements": {
+        "ethicsNot": [
+          "ethic_egalitarian",
+          "ethic_fanatic_egalitarian",
+          "ethic_gestalt_counciousness"
+        ]
+      }
+    },
     {
-        "id": "auth_imperial",
-        "name": "Imperial",
-        "icon": "Auth_imperial.png",
-        "description": "Imperial governments are similar to dictatorial ones, except that the throne is always inherited by a designated successor upon the ruler's death.",
-        "rulerTerm": "Life",
-        "empireEffects": ["+10% Resources from Jobs in Capital System", "Ruler has the Imperial Ruler trait"],
-        "rulerEffects": ["+5 Editcs Fund", "+0.25 Max Influence from Power Projection"],
-        "requirements": {
-          "ethicsNot": ["ethic_egalitarian", "ethic_fanatic_egalitarian", "ethic_gestalt_counciousness"]
-         }
-        },
+      "id": "auth_imperial",
+      "name": "Imperial",
+      "icon": "Auth_imperial.png",
+      "description": "Imperial governments are similar to dictatorial ones, except that the throne is always inherited by a designated successor upon the ruler's death.",
+      "rulerTerm": "Life",
+      "empireEffects": [
+        "+10% Resources from Jobs in Capital System",
+        "Ruler has the Imperial Ruler trait"
+      ],
+      "rulerEffects": [
+        "+5 Editcs Fund",
+        "+0.25 Max Influence from Power Projection"
+      ],
+      "requirements": {
+        "ethicsNot": [
+          "ethic_egalitarian",
+          "ethic_fanatic_egalitarian",
+          "ethic_gestalt_counciousness"
+        ]
+      }
+    },
     {
-        "id": "auth_corporate",
-        "name": "Corporate",
-        "icon": "Auth_corporate.png",
-        "description": "Corporate governments are organized as a massive commercial enterprise that has completely supplanted the role of the state.",
-        "rulerTerm": "20 years",
-        "empireEffects": ["Can have Emergency Elections", "+20% Commecrial Pact Efficiency", "+50% Empire Size from Planets", "Can use the Mercantile Diplomatic Stance", "Can build Branch Offices"],
-        "rulerEffects": ["+5 Editcs Fund", "+2% Branch Office Value"],
-        "requirements": {
-          "ethicsNot": ["ethic_fanatic_authoritarian", "ethic_fanatic_egalitarian", "ethic_gestalt_counciousness"]
-         }
-        },
+      "id": "auth_corporate",
+      "name": "Corporate",
+      "icon": "Auth_corporate.png",
+      "description": "Corporate governments are organized as a massive commercial enterprise that has completely supplanted the role of the state.",
+      "rulerTerm": "20 years",
+      "empireEffects": [
+        "Can have Emergency Elections",
+        "+20% Commecrial Pact Efficiency",
+        "+50% Empire Size from Planets",
+        "Can use the Mercantile Diplomatic Stance",
+        "Can build Branch Offices"
+      ],
+      "rulerEffects": ["+5 Editcs Fund", "+2% Branch Office Value"],
+      "requirements": {
+        "ethicsNot": [
+          "ethic_fanatic_authoritarian",
+          "ethic_fanatic_egalitarian",
+          "ethic_gestalt_counciousness"
+        ]
+      }
+    },
     {
-        "id": "auth_hive_mind",
-        "name": "Hive Mind",
-        "icon": "Auth_hive_mind.png",
-        "description": "Hive Minds operate as a single organism more than as a state. The population has no free will, and act as an extension of the Hive Mind itself - much like the limbs of a body. When cut off from the Mind, these drones become comatose and eventually wither and die. Any free individuals on planets owned by the Mind are driven away, killed, or simply treated as prey to feed the collective.",
-        "rulerTerm": "Permanent",
-        "empireEffects": ["+25% Pop Growth Speed", "-25% Empire Size Effect", "Pops have the Hive-Minded Trait", "Ruler has the Hive Mind trait"],
-        "rulerEffects": ["+5 Editcs Fund", "+2% Monthly Unity"],
-        "requirements": {
-          "ethic": "ethic_gestalt_counciousness",
-          "archetypeNot": "robot"
-         },
-         "speciesTrait":"trait_hive_minded"
-        },
+      "id": "auth_hive_mind",
+      "name": "Hive Mind",
+      "icon": "Auth_hive_mind.png",
+      "description": "Hive Minds operate as a single organism more than as a state. The population has no free will, and act as an extension of the Hive Mind itself - much like the limbs of a body. When cut off from the Mind, these drones become comatose and eventually wither and die. Any free individuals on planets owned by the Mind are driven away, killed, or simply treated as prey to feed the collective.",
+      "rulerTerm": "Permanent",
+      "empireEffects": [
+        "+25% Pop Growth Speed",
+        "-25% Empire Size Effect",
+        "Pops have the Hive-Minded Trait",
+        "Ruler has the Hive Mind trait"
+      ],
+      "rulerEffects": ["+5 Editcs Fund", "+2% Monthly Unity"],
+      "requirements": {
+        "ethic": "ethic_gestalt_counciousness",
+        "archetypeNot": "robot"
+      },
+      "speciesTrait": "trait_hive_minded"
+    },
     {
-        "id": "auth_machine_intelligence",
-        "name": "Machine Intelligence",
-        "icon": "Auth_machine_intelligence.png",
-        "description": "Machine Intelligences are immense artificial group minds that have been networked into a single conscious entity. Most of the actual population in such an empire consists of mindless work units who perform their designated tasks without any semblance of free will. A small number of semi-autonomous agents are typically employed for more specialized tasks that benefit from some degree of independent initiative.",
-        "rulerTerm": "Permanent",
-        "empireEffects": ["+1 Monthly Mechanical Pop Assembly", "+1 Pop when colonizing a world", "+10% Mining Station Output", "+50% Empire Size from Planets", "50% Pop Growth Reduction", "Pops have the Machine trait", "Ruler has the Machine Intelligence trait"],
-        "rulerEffects": ["+5 Editcs Fund", "-3% Empire Size from Pops"],
-        "requirements": {
-          "ethic": "ethic_gestalt_counciousness",
-          "archetype":"robot"
-         },
-         "speciesTrait": "trait_machine"
-        }
-    ]
+      "id": "auth_machine_intelligence",
+      "name": "Machine Intelligence",
+      "icon": "Auth_machine_intelligence.png",
+      "description": "Machine Intelligences are immense artificial group minds that have been networked into a single conscious entity. Most of the actual population in such an empire consists of mindless work units who perform their designated tasks without any semblance of free will. A small number of semi-autonomous agents are typically employed for more specialized tasks that benefit from some degree of independent initiative.",
+      "rulerTerm": "Permanent",
+      "empireEffects": [
+        "+1 Monthly Mechanical Pop Assembly",
+        "+1 Pop when colonizing a world",
+        "+10% Mining Station Output",
+        "+50% Empire Size from Planets",
+        "50% Pop Growth Reduction",
+        "Pops have the Machine trait",
+        "Ruler has the Machine Intelligence trait"
+      ],
+      "rulerEffects": ["+5 Editcs Fund", "-3% Empire Size from Pops"],
+      "requirements": {
+        "ethic": "ethic_gestalt_counciousness",
+        "archetype": "robot"
+      },
+      "speciesTrait": "trait_machine"
+    }
+  ]
 }
-
-  
