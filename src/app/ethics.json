@@ -1,77 +1,335 @@
 {
-        "ethics": [
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          },
-          {
-            "id": "",
-            "name": "",
-            "icon": "",
-            "bonuses": [],
-            "principles": "",
-            "ethicPoints": 0
-          }
-  
+  "ethics": [
+    {
+      "id": "ethic_spirutualist",
+      "name": "Spiritualist",
+      "icon": "ethic_spiritualist.png",
+      "bonuses": ["+10% Monthly unity", "-10% Edict cost", "-10% Edict upkeep"],
+      "principles": [
+        "Can use the Veneration of Saints edict",
+        "Can build Temple buildings",
+        "Cannont use Citizen Rights AI policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_materialist",
+        "ethic_fanatic_spiritualist",
+        "ethic_fanatic_materialist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_spirutalist",
+      "name": "Fanatic Spiritualist",
+      "icon": "ethic_fanatic_spiritualist.png",
+      "bonuses": ["+20% Monthly unity", "-20% Edict cost", "-20% Edict upkeep"],
+      "principles": [
+        "Can use the Veneration of Saints edict",
+        "Can build Temple buildings",
+        "Cannont use Citizen Rights AI policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_spiritualist",
+        "ethic_materialist",
+        "ethic_fanatic_materialist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_materialsit",
+      "name": "Materialist",
+      "icon": "ethic_materialist.png",
+      "bonuses": ["-10% Robot upkeep", "+5% Research speed"],
+      "principles": [
+        "Allows Academic Privillege living standards",
+        "Cannon use Outlawed AI policy",
+        "Cannot use Outlawed Robotic Workers policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_fanatic_materialist",
+        "ethic_spiritualist",
+        "ethic_fanatic_spiritualist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_materialist",
+      "name": "Fanatic Materialist",
+      "icon": "ethic_fanatic_materialist.png",
+      "bonuses": ["-20% Robot upkeep", "+10% Research speed"],
+      "principles": [
+        "Allows Academic Privillege living standards",
+        "Cannon use Outlawed AI policy",
+        "Cannot use Outlawed Robotic Workers policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_spiritualist",
+        "ethic_fanatic_spiritualist",
+        "ethic_materialist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_militarist",
+      "name": "Militarist",
+      "icon": "ethic_militarist.png",
+      "bonuses": ["-10% Claim influence cost", "+10% Ship fire rate"],
+      "principles": [
+        "Can use the No Retreat War Doctrine policy after completing the Supremacy tradition tree"
+      ],
+      "mutuallyExclusive": [
+        "ethic_pacifist",
+        "ethic_fanatic_pacifist",
+        "ethic_fanatic_militarist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_militarist",
+      "name": "Fanatic Militarist",
+      "icon": "ethic_fanatic_militarist.png",
+      "bonuses": ["-20% Claim Influence cost", "+20% Ship fire rate"],
+      "principles": [
+        "Can use the No Retreat War Doctrine policy after completing the Supremacy tradition tree"
+      ],
+      "mutuallyExclusive": [
+        "ethic_pacifist",
+        "ethic_fanatic_pacifist",
+        "ethic_militarist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_xenophobe",
+      "name": "Xenophobe",
+      "icon": "ethic_xenophobe.png",
+      "bonuses": [
+        "-20% Starbase influence cost",
+        "+10% Pop growth speed",
+        "-1 External leader pool size"
+      ],
+      "principles": [
+        "Can use the Fear Campaign edict",
+        "Decreased Opinion with alien Empires",
+        "Can Purge and Displace aliens",
+        "Can enslave aliens",
+        "Can use Livestock slavery",
+        "Cannot grant aliens Full Citizenship",
+        "Cannot grant aliens Full Millitary Service",
+        "Cannot use Refugees Welcome Refugees policy",
+        "Cannot use Proactive First Contact Protocol policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_xenophile",
+        "ethic_fanatic_xenophile",
+        "ethic_fanatic_xenophobe",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_xenophobe",
+      "name": "Fanatic Xenophobe",
+      "icon": "ethic_fanatic_xenophobe.png",
+      "bonuses": [
+        "-40% Starbase influence cost",
+        "+20% Pop growth speed",
+        "-2 External leader pool size"
+      ],
+      "principles": [
+        "Can use the Fear Campaign edict",
+        "Decreased Opinion with alien Empires",
+        "Can Purge and Displace aliens",
+        "Can enslave aliens",
+        "Can use Livestock slavery",
+        "Cannot grant aliens Full Citizenship",
+        "Cannot grant aliens Full Millitary Service",
+        "Cannot use Refugees Welcome Refugees policy",
+        "Cannot use Proactive First Contact Protocol policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_xenophobe",
+        "ethic_xenophile",
+        "ethic_fanatic_xenophile",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_egalitarian",
+      "name": "Egalitarian",
+      "icon": "ethic_egalitarian.png",
+      "bonuses": ["+25% Faction unity gain"],
+      "principles": [
+        "Can use the Encourage Political Thought edict",
+        "Allows Utopian Living Standards",
+        "Cannot use Capacity Boosters Leader Enhancement policy",
+        "Cannot reform into Autocratic authority "
+      ],
+      "mutuallyExclusive": [
+        "ethic_fanatic_egalitarian",
+        "ethic_authoritarian",
+        "ethic_fanatic_authoritarian",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_egalitarian",
+      "name": "Fanatic Egalitarian",
+      "icon": "ethic_fanatic_egalitarian.png",
+      "bonuses": [
+        "+50% Faction unity gain",
+        "+10% Specialist job output",
+        "+1 Leader pool size"
+      ],
+      "principles": [
+        "Can use the Encourage Political Thought edict",
+        "Allows Utopian Living Standards",
+        "Cannot use Capacity Boosters Leader Enhancement policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_egalitarian",
+        "ethic_authoritarian",
+        "ethic_fanatic_authoritarian",
+        "ethic_gestalt"
+      ],
+      "requiredAuthority": "auth_democratic",
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_pacifist",
+      "name": "Pacifist",
+      "icon": "ethic_pacifist.png",
+      "bonuses": ["-15% Empire size from pops", "+5 Stability"],
+      "principles": [
+        "Can use the Peace Festivals edict",
+        "Cannot use Unrestriced Wars War Philosophy",
+        "Cannot use Agressive Interference Pre-FTL Interference policy",
+        "cannot engage in Indriciminate Orbital Borbadment",
+        "Cannot use Aggresive Frist Contact Protocol policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_fanatic_pacifist",
+        "ethic_militarist",
+        "ethic_fanatic_militarist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_pacifist",
+      "name": "Fanatic Pacifist",
+      "icon": "ethic_fanatic_pacifst.png",
+      "bonuses": ["-30% Empire size from pops", "+10 Stability"],
+      "principles": [
+        "Can use the Peace Festivals edict",
+        "Cannot use Unrestriced Wars War Philosophy",
+        "Cannot use Agressive Interference Pre-FTL Interference policy",
+        "cannot engage in Indriciminate Orbital Borbadment",
+        "Cannot use Aggresive Frist Contact Protocol policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_pacifist",
+        "ethic_militarist",
+        "ethic_fanatic_militarist",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 2
+    },
+    {
+      "id": "ethic_xenophile",
+      "name": "Xenophile",
+      "icon": "ethic_xenophile.png",
+      "bonuses": [
+        "+10% Trade value",
+        "+1 Available envoys",
+        "+1 External leader pool size",
+        "+50% Observation insights progress"
+      ],
+      "principles": [
+        "Can use the Land of Opportunity edict",
+        "Increased Opinion wiht alien empires",
+        "Cannot use Population Controls Enabled species rights",
+        "Cannot Displace aliens",
+        "Cannot use Agressive First Contact Protocol policy",
+        "Cannot use Hunted or Extermination Pre-sapients policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_fanatic_xenophile",
+        "ethic_xenophobe",
+        "ethic_fanatic_xenophobe",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 1
+    },
+    {
+      "id": "ethic_fanatic_xenophile",
+      "name": "Fanatic Xenophile",
+      "icon": "ethic_fanatic_xenophile.png",
+      "bonuses": [
+        "+20% Trade value",
+        "+2 Available envoys",
+        "+2 External leader pool size",
+        "+100% Observation insights progress"
+      ],
+      "principles": [
+        "Can use the Land of Opportunity edict",
+        "Increased Opinion wiht alien empires",
+        "Cannot use Population Controls Enabled species rights",
+        "Cannot Displace aliens",
+        "Cannot use Agressive First Contact Protocol policy",
+        "Cannot use Hunted or Extermination Pre-sapients policy"
+      ],
+      "mutuallyExclusive": [
+        "ethic_xenophile",
+        "ethic_xenophobe",
+        "ethic_fanatic_xenophobe",
+        "ethic_gestalt"
+      ],
+      "ethicPoints": 0
+    },
+    {
+      "id": "ethic_gestalt",
+      "name": "Gestalt Conciousness",
+      "icon": "ethic_gestalt.png",
+      "bonuses": [
+        "-20% War exhaution gain",
+        "+1 Monthly influence",
+        "+2 Encryption",
+        "Cannot change ethics"
+      ],
+      "principles": [
+        "Can use the No Retreat War Doctrine policy after completing the Supremacy tradition tree",
+        "Factions cannot form",
+        "Gestalt Pops cannot survive in empires wiht a different authority",
+        "Gestalt pops are not affected by happiness",
+        "Gestalt Pops use Menial Drone and Complex Drone strata"
+      ],
+      "mutuallyExclusive": [
+        "ethic_authoritarian",
+        "ethic_fanatic_authoritarian",
+        "ethic_egalitarian",
+        "ethic_fanatic_egalitarian",
+        "ethic_materilist",
+        "ethic_fanatic_materialist",
+        "ethic_militarist",
+        "ethic_fanatic_militarist",
+        "ethic_pacifist",
+        "ethic_fanatic_pacifist",
+        "ethic_spiritualist",
+        "ethic_fanatic_spiritualist",
+        "ethic_xenophile",
+        "ethic_fanatic_xenophile",
+        "ethic_xenophobe",
+        "ethic_fanatic_xenophobe"
+      ],
+      "ethicPoints": 3
+    }
   ]
 }
