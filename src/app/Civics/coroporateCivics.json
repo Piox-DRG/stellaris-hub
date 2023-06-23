@@ -1,0 +1,584 @@
+{
+    "standardCivics": [
+      {
+        "id": "civic_criminal_heritage",
+        "name": "Criminal Heritage",
+        "icon":"Civic_criminal_heritage.png",
+        "description": "This megacorporation can trace its origins back to a crime syndicate that eventually grew powerful enough to supplant all forms of local government.",
+        "effects": ["Cannot be added or removed after game start", "Cannot have Commercial Pacts", "Crime on Branch Office planets increases Branch Office value", "Can build special crime-increasing Corporate holdings", "Can build Branch offices on the planet of any regular empire they have no war or truce with", "-20% Branch Office Cost", "+20% Infiltration Speed", "+1 Codebreaking", "+1 Cloacking Strength"],
+        "councilPosition": {
+          "position": "Syndication Agency Officer ",
+          "effectsPerLeaderSkillLevel": ["+0.025 Branch Office Value per Criminal"],
+          "description": "The Syndication Agency Officer ensures employees of external branch offices are properly trained in their field. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_franchising",
+        "name": "Franchising",
+        "icon":"Civic_franchising.png",
+        "description": "This megacorporation relies heavily on franchising. Subsidiaries share a greater cut of their profits with their corporate overlord, in exchange for a license to market their goods under established brands.",
+        "effects": ["-25% Empire size from Branch Office", "+0.5 Monthly loyalty from subjects", "Can construct Franchise Headquarters holdings", "No Loyalty loss from multiple subjects", "Cannot use Expansion Prohibited terms of agreement", "Cannot use Limited Diplomacy terms of agreement"],
+        "councilPosition": {
+          "position": "Franchise Develompemnt Office",
+          "effectsPerLeaderSkillLevel": ["-2% Empire Size from Branch Offices"],
+          "description": "The Franchise Development Officer is responsible for expansion into new locations and markets. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_free_traders",
+        "name": "Free Traders",
+        "icon":"Civic_free_traders.png",
+        "description": "The trading fleets of this megacorporation are bolstered by semi-independent free traders operating under license.",
+        "effects": ["+10% Trade value", "+10% Branch Office value"],
+        "councilPosition": {
+          "position": "Chief Trade Officer",
+          "effectsPerLeaderSkillLevel": ["+2% Commercial Pact Efficiency"],
+          "description": "The Chief Trade Officer supervises trade with other empires."
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_private_prospectors",
+        "name": "Private Prospectors",
+        "icon":"Civic_private_prospectors.png",
+        "description": "Building better worlds is hazardous work, but this Megacorporation relies on private prospectors to chart and establish footholds on promising planets.",
+        "effects": ["Can build private colony ships", "-33% Empire size from Systems"],
+        "councilPosition": {
+          "position": "Expansion Coordinator",
+          "effectsPerLeaderSkillLevel": ["-2% Outpost Build Cost", "-2% Starbase Influence Cost"],
+          "description": "The Expansion Coordinator coordinates expansion efforts when claiming new systems. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_trading_posts",
+        "name": "Trading Posts",
+        "icon":"Civic_trading_posts.png",
+        "description": "Good business is where you find it. This Megacorporation has a long tradition of spreading its influence through the establishment on trading posts. Their starbases are busy centers of trade.",
+        "effects": ["+4 Starbase Capacity"],
+        "councilPosition": {
+          "position": "Trade Logistics Coordinator",
+          "effectsPerLeaderSkillLevel": ["+0.5 Trade Value per Trade Hub"],
+          "description": "The Trade Logistics Coordinator is in charge of coordinating trade route scheduling to optimize capacity. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_beacon_of_liberty"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_gospel_of_the_masses",
+        "name": "Gospel of the Masses",
+        "icon":"Civic_gospel_of_the_masses.png",
+        "description": "This Megacorporation embraces a curious blend of commercial and spiritualistic values, in which the position of ordained minister and corporate officer have merged into a single role.",
+        "effects": ["+50% Spiritualist ethics attraction", "Can build Temple of Prosperity Corporate holding", "+0.33 Trade value per free Spiritualist pop on empire or planets with Branch Offices"],
+        "councilPosition": {
+          "position": "Executive High Priest",
+          "effectsPerLeaderSkillLevel": ["+5% Temple of Prosperity Ethics Shift Chance"],
+          "description": "The Executive High Priest is in charge of spreading the gospel. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_spirtualist", "ethic_fanatic_spiritualist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_identured_assets",
+        "name": "Identured Assets",
+        "icon":"Civic_identured_assets.png",
+        "description": "This Megacorporation specializes in large indentured workforces. It has little to do with the barbaric practice of slavery - these workers are merely paying off their debts... indefinitely.",
+        "effects": ["+10% Slave pop resources output", "35% Enspalved pop ratio"],
+        "councilPosition": {
+          "position": "Assets Appropriation Officer",
+          "effectsPerLeaderSkillLevel": ["+0.2 Trade Value per Enslaved Pop"],
+          "description": "The Assets Appropriation Officer ensures efficiency in the trade of indentured assets. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_corporate_hedonism", "civic_pleasure_seekers", "civic_slaver_guilds"],
+        "excludesOrigins": ["origin_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_authoritarian", "ethic_fanatic_authoritarian"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_media_conglomerate",
+        "name": "Media Conglomerate",
+        "icon":"Civic_media_conglomerate.png",
+        "description": "Before branching into other fields, this Megacorporation began its rise to fortune as a media conglomerate. Its PR department are still masters of spinning stories and presenting the latest quarterly report in the most advantageous way.",
+        "effects": ["+5% Citizen pop happiness", "-5% War exhaution gain"],
+        "councilPosition": {
+          "position": "Chief Marketing Officer ",
+          "effectsPerLeaderSkillLevel": ["+5% Governing Ethics Attraction"],
+          "description": "The Chief Marketing Officer runs promotional campaigns for the government. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_idealistic_foundation"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_naval_contractors",
+        "name": "Naval Contractors",
+        "icon":"Civic_naval_contractors",
+        "description": "This Megacorporation relies on several semi-independent navy contractors to increase its fleet size. Competing for bids, the contractors are always struggling to outperform one another. ",
+        "effects": ["+15% Naval capacity", "+2 Mercenary Enclave capacity"],
+        "councilPosition": {
+          "position": "Naval Procurement Officer ",
+          "effectsPerLeaderSkillLevel": ["-1% Ship Build Cost"],
+          "description": "The Naval Procurement Officer negotiates contracts for the navy. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_citizen_service"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_militarist", "ethic_fanatic_militarist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_private_military_companies",
+        "name": "Private Military Companies",
+        "icon":"Civic_private_military_companies.png",
+        "description": "This Megacorporation has a large number of powerful private military companies on its payroll. These mercenary contractors augment its ground forces.",
+        "effects": ["+20% Army damage", "-20% Army upkeep", "+100% Army starting experience", "+1 Mercenary Enclave capacity"],
+        "councilPosition": {
+          "position": "Public Security Chief ",
+          "effectsPerLeaderSkillLevel": ["+0.25% Stability from Soldiers"],
+          "description": "The Public Security Chief maintains civilian order via private military organizations. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_warrior_culture"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_militarist", "ethic_fanatic_militarist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_ruthless_competition",
+        "name": "Ruthless Competition",
+        "icon":"Civic_ruthless_competition.png",
+        "description": "All levels of society in this Megacorporation are constantly vying with each other in ruthless competition. It's a dog-eat-dog world.",
+        "effects": ["+1 Additional leader trait options", "+1 Leader pool size", "+10% Leader experience gain", "+1 Codebreaking"],
+        "councilPosition": {
+          "position": "Chief of Staff",
+          "effectsPerLeaderSkillLevel": ["-4% Leader Upkeep", "-4% Leader Cost"],
+          "description": "The Chief of Staff thrives under pressure and will stop at nothing to prove their worth."
+        },
+      "requirements": {
+        "excludesCivics": ["civic_meritocracy"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_catalytic_recyclers",
+        "name": "Catalytic Recyclers",
+        "icon":"Civic_catalytic_recyclers.png",
+        "description": "This megacorporation seeks to maximize profits by recycling excess organic matter into advanced resources suitable for spacebound structures.",
+        "effects": ["Replaces Metallurgist jobs with Catalytic Technician jobs"],
+        "councilPosition": {
+          "position": "Chief Catalyst Officer ",
+          "effectsPerLeaderSkillLevel": ["-2% Metallurgist Upkeep"],
+          "description": "The Chief Catalyst Officer oversees augmentation of catalytic raw materials. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_catalytic_processing"],
+        "excludesOrigins": ["orign_calamitous_birth"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_gigacorp",
+        "name": "Gigacorp",
+        "icon":"Civic_gigacorp.png",
+        "description": "The ultimate goal of this empire is to ascend to ever greater levels of fulfillment.",
+        "effects": ["+25% Planetary ascension effects", "-10% Planetary ascension cost", "-25% Tradition cost from empire size"],
+        "councilPosition": {
+          "position": "Chief Ascension Officer ",
+          "effectsPerLeaderSkillLevel": ["+2% Monthly Unity"],
+          "description": "The Chief Ascension Officer leads the pursuit of perfection. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_spirtualist", "ethic_fanatic_spiritualist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_corporate_hedonism",
+        "name": "Corporate Hedonism",
+        "icon":"Civic_corporate_hedonism.png",
+        "description": "Work is where you want to be. The citizens of this Megacorporation happily pledge allegiance - and all their free time - to their employers in exchange for lavish corporate comforts.",
+        "effects": ["Can use the Decadent Lifestyle living standard", "+1% Pop growth speed", "+5% Amenities from Servants"],
+        "councilPosition": {
+          "position": "Chief Morale Officer",
+          "effectsPerLeaderSkillLevel": ["+0.08 Trade Value from Entertainers"],
+          "description": "The Chief Morale Officer ensures that extra benefits are available to those willing to pay."
+        },
+      "requirements": {
+        "excludesCivics": ["civic_identured_assets", "civic_pleasure_seekers", "civic_slaver_guilds"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_mastercract_inc",
+        "name": "Mastercraft Inc.",
+        "icon":"Civic_mastercraft_inc",
+        "description": "This megacorporation has focused its production pipeline solely on goods of the highest quality and profit margins, creating and marketing stunning products with artistry and craft.",
+        "effects": ["Replaces Artisan jobs with Artificer jobs", "+1 Building slot per 3 industrial districts (except on Habitats)(+0.34 eacj)"],
+        "councilPosition": {
+          "position": "Master Crafter ",
+          "effectsPerLeaderSkillLevel": ["+1% Armor Hit Points"],
+          "description": "The Master Crafter oversees craftsmanship in military applications. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_masterful_crafters"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_public_relations_specialists",
+        "name": "Public Relations Specialists",
+        "icon":"Civic_public_relations_specialists.png",
+        "description": "If you can control what someone thinks, then you can also control their behavior. This Megacorporation has a virtual army of specialists ready to engage in battles of public opinion.",
+        "effects": ["+2 Availabe envoys", "+10% Diplomatic weight"],
+        "councilPosition": {
+          "position": "Exopublic Relations Officer ",
+          "effectsPerLeaderSkillLevel": ["+5% Envoy Improve Relations"],
+          "description": "The Exopublic Relations Officer is responsible for improving our public image on the galactic stage."
+        },
+      "requirements": {
+        "excludesCivics": ["civic_diplomatic_corps"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_corporate_death_cult",
+        "name": "Corporate Death Cult",
+        "icon":"Civic_corporate_death_cult.png",
+        "description": "This Megacorporation has embraced ritual sacrifice as a means of ensuring its continuing profits. Willing initiates periodically give their lives in hopes of good fortune for their society. ",
+        "effects": ["Can construct Sacificial Temple buildings", "Can construct Sacrificial Shrine holdings", "Can use Sacrifice edicts"],
+        "councilPosition": {
+          "position": "Chief Executive Executioner ",
+          "effectsPerLeaderSkillLevel": ["+2% Sacrificial Edict Effect"],
+          "description": "The Chief Executive Executioner presides over sacrificial rituals. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_inward_perfectionist", "civic_fanatic_purifiers"],
+        "excludesOrigins": ["origim_necrophage"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_spirtualist", "ethic_fanatic_spiritualist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_permanent_employement",
+        "name": "Permanent Empoloyement",
+        "icon":"Civic_permanent_employement.png",
+        "description": "This Megacorporation has ensured that its employees will never be out of a job. Ever. After the employee's time is up, they will be repurposed for simpler tasks so that they can still provide for their families and pay off their debts.",
+        "effects": ["Can construct Posthumous Employment Center buildings", "Can construct Reemployment Center holdings", "Pops created through organic pop assembly have the Zombie trait", "Start with 3 or 4 pops with the Zombie trait", "After 80-120 years, can gain the Zombie Contract Manipulation empire modifier", "Defeated organic guardians can be resurrected"],
+        "councilPosition": {
+          "position": "Workforce Assignment Officer ",
+          "effectsPerLeaderSkillLevel": ["+1% Organic Pop Assembly Speed"],
+          "description": "The Workforce Assignment Officer commissions and oversees new workers. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_mechanist", "origin_clone_army", "origin_necrophage"],
+        "excludesEthics": ["ethic_egalitarian", "ethic_fanatic_egalitarian"],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_trawling_operations",
+        "name": "Trawiling Operations",
+        "icon":"Civic_trawiling_operations.png",
+        "description": "Adept at utilizing nature's bounty, this society provides for itself a stable influx of sustenance and economic value.",
+        "effects": ["Cannot be added or removed after game start", "Main species must have the Aquatic trait", "No Agriculture district limit on Ocean Worlds", "Replaces Farmer jobs with an Angler job on wet climates", "Agriculture districts create Pearl Driver jobs on wet climates", "-50 Agriculture district minerals cost on wet climates"],
+        "councilPosition": {
+          "position": "Chief Marine Officer",
+          "effectsPerLeaderSkillLevel": ["+0.2 Trade value from Anglers", "+0.4 Trade Value from Pearl Divers"],
+          "description": "The Chief Marine Officer is responsible for seaborne productivity."
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_post_apocalyptic", "origin_shattered_ring", "origin_void_dwellers", "origin_subterranean"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_corporate_mutagenic_spas",
+        "name": "Mutagenic Spas",
+        "icon":"Civic_corporate_toxic_baths.png",
+        "description": "This civilization engages in mutagenic bathing, with professional attendants overseeing the use of highly dangerous substances. This 'invigorating' process is marketed as a necessary step in wellbeing and personal development. ",
+        "effects": ["Can construct Mutagenic Spa buildings"],
+        "councilPosition": {
+          "position": "Mutagenic Aesthetician ",
+          "effectsPerLeaderSkillLevel": ["+0.05 Unity from Mutagenic Spa Attendants"],
+          "description": "The Mutagenic Aesthetician promotes the importance and benefits of the bathing rituals. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_mutagenic_spas"],
+        "excludesOrigins": ["origin_life_seeded"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_refurbishement_division",
+        "name": "Refurbishement Division",
+        "icon":"Civic_refurbishement_division.png",
+        "description": "In this society, nothing goes to waste, even in the grimmest times of war: no enemy technology will go undiscovered, as teams of scrappers accompanying the war fleets scrape wreckages of anything and everything worth salvaging.",
+        "effects": ["Enables the Research & Salavage Debris debris policy", "10% chance per ship debris to create a ship of equal size", "+10 Opinion with the Salvagers enclave"],
+        "councilPosition": {
+          "position": "Master Scrapper ",
+          "effectsPerLeaderSkillLevel": ["+1% chance to Salvage Ships"],
+          "description": "The Master Scrapper is in charge of refining the salvaging process of scavenged ships. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_scavangers"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_corporate_relentless_industrialists",
+        "name": "Relentless Industrialists",
+        "icon":"Civic_corporate_relentless_industrialists.png",
+        "description": "To live is to exploit. This civilization is built around the principle of living life to the fullest, in the sense of squeezing the maximum profit from every last ounce of matter and membrane available for exploitation.",
+        "effects": ["Can construct Coordinated Fullfillment Center buildings", "Start with a Coordinated Fullfillment Center building", "First time a world is polluted triggers the Environmental Deterioration situation"],
+        "councilPosition": {
+          "position": "Chief Extraction Officer",
+          "effectsPerLeaderSkillLevel": ["+2% Minerals from Miners"],
+          "description": "The Chief Extraction Officer will exploit anyone and anything to ensure industrial expansion. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_agrarian_idyll", "civic_environmentalist", "civic_idyllic_bloom", "civic_memorialists", "civic_relentless_industrialists"],
+        "excludesOrigins": ["origin_life_seeded"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_privatized_exploration",
+        "name": "Privatized Exploration",
+        "icon":"Civic_privatized_exploration.png",
+        "description": "For years, this civilization was told that the hyperdrive was almost finished. Patiently they waited, yet all the while, the subsidiary in charge of the project was quietly diverting the funds into their own, private accounts. When the fraud was finally revealed, the Corporation hastened to provide experimental, exploratory vessels.",
+        "effects": ["Cannot be added or removed after game start", "Start with 10 fewer pops", "start with the Subspace Drive technology", "Start wtih the Starhold technology", "start with a Resource Silo starbase building", "Starting starbase is a Starhold", "+30% Starbase Upgrade Speed", "+30% Starbase Building Build Speed", "30% Starbase Module Build Speed", "+25% Resources from Orbital Stations", "Start without Research Labs", "Start without a fleet", "Start with a second science ship", "Start with a second scientist"," Certain starting technologies are not researched but available as permanent options"],
+        "councilPosition": {
+          "position": "Orbital Development Officer",
+          "effectsPerLeaderSkillLevel": ["+2.5% Starbase Building Cost", "+2.5% Starbase Module Cost", "+2.5% Orbital Stations Build Cost"],
+          "description": "The Orbital Development Officer is in charge of constructing and maintaining orbital stations. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_broken_shackles", "origin_fear_of_the_dark", "origim_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_pharma_state",
+        "name": "Pharma State",
+        "icon":"Civic_pharma_state.png",
+        "description": "A strong nation is a healthy nation. This megacorporation maintains a robust economy through experimental drugs, highly privatized clinics, and aggressive marketing campaigns.",
+        "effects": ["+10% Years Leader Lifespan", "+2 Amenities from Medical Workers", "+4 Trade Value from Medical Workers", "Can construct Corporate Clinic holdings", "Start with a Gene Clinics building", "Start with the Genetic Healthcare technology", "Start with the Subdermal Stimulatio technology as a permanent research option"],
+        "councilPosition": {
+          "position": "Pharmaceutical Executive ",
+          "effectsPerLeaderSkillLevel": ["+1% Pop Growth Speed", "+1% Habitability"],
+          "description": "The Pharmaceutical Executive is the representative for all healthcare corporations. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_broken_shackles", "origin_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_precision_cogs",
+        "name": "Precision Cogs",
+        "icon":"Civic_precision_cogs.png",
+        "description": "This megacorporation operates on a highly optimized and robust system of delegation. Such an approach means that a given task is always performed by the most qualified worker.",
+        "effects": ["+1 Leader capacity", "-1 Maximum Negative Traits", "-20% Leader Upkeep"],
+        "councilPosition": {
+          "position": "Chief Posting Officer",
+          "effectsPerLeaderSkillLevel": ["+1% Specialist Happiness", "+5 Specialist Political Power"],
+          "description": "The Chief Posting Officer is responsible for the efficient handling of all delegation assignments."
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_knowledge_mentorship",
+        "name": "Knowledge Mentorship",
+        "icon":"Civic_knowledge_mentorship.png",
+        "description": "The knowledge, principles, and experiences of exceptional people are digitized and accumulated in the Vaults of Knowledge. Citizens can access this source of wisdom and experience to learn from the ghosts of the past. For a price, of course.",
+        "effects": ["+1 Leader Starting level", "+10% Leader experience gain", "+5% Trade Value", "Can construct Vaults of Knowledge buildings", "Start with a Vault of Knowledge building"],
+        "councilPosition": {
+          "position": "Dealer of Knowledge ",
+          "effectsPerLeaderSkillLevel": ["-2% Leader Upkeep", "-2% Leader Cost"],
+          "description": "Dealers of Knowledge are responsible for maintaining the vast vault archives. They distribute the knowledge to those who are willing to pay for it. "
+        },
+      "requirements": {
+        "excludesCivics": ["civic_vaults_of_knowledge"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_letter_of_marquee",
+        "name": "Letter of Marquee",
+        "icon":"Civic_letter_of_marquee.png",
+        "description": "To combat space piracy and safeguard its borders, this megacorporation utilizes notorious pirates as military advisors and admirals for their fleets.",
+        "effects": ["+20 Trade Protection", "-10% Ship Upkeep", "+1 Mercenary Enclave capacity", "Admirals have the MAterial Liberator trait", "Can use the Pirate Raid casus belli"],
+        "councilPosition": {
+          "position": "Privateer Acquisition Officer ",
+          "effectsPerLeaderSkillLevel": ["+1% Ship Fire Rate", "+1 Trade Protection"],
+          "description": "Acquisition officers are constantly headhunting for promising privateers and those with plundering experience who could expand our operations. "
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": ["ethic_pacifist", "ethic_fanatic_pacifist"],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_authoritarian", "ethic_fanatic_authoritarian", "ethic_militarist", "ethic_fanatic_militarist"],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_",
+        "name": "",
+        "icon":"Civic_",
+        "description": "",
+        "effects": [""],
+        "councilPosition": {
+          "position": "",
+          "effectsPerLeaderSkillLevel": [""],
+          "description": ""
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    },
+    {
+        "id": "civic_",
+        "name": "",
+        "icon":"Civic_",
+        "description": "",
+        "effects": [""],
+        "councilPosition": {
+          "position": "",
+          "effectsPerLeaderSkillLevel": [""],
+          "description": ""
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_coporate"]
+      }
+    }
+]
+}
