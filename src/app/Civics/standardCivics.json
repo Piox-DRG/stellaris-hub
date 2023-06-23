@@ -341,14 +341,75 @@
       }
     },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_fanatic_purifiers",
+      "name": "Fanatic Purifiers",
+      "icon": "Civic_fanatic_purifiers.png",
+      "description": "This society appears hellbent on scouring the galaxy of all other sapient life. Come what may, they will suffer no xenos to live.",
+      "effects": ["Cannot be added or removed after game start", "+33% fire rate","+33% Army damage", "+33% Naval capacity", "-15% Ship cost", "Genocidal"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Minister of War Production",
+        "effectsPerLeaderSkillLevel": ["+2% Monthly Alloys"],
+        "description": "The Minister of War Production ensures resources are available to sustain military operations."
+      },
+      "requirements": {
+        "excludesCivics": ["civic_barbaric_despoilers", "civic_pompous_purists", "civic_crusader_spirit"],
+        "excludesOrigins": ["origin_syncretic_evolution", "origin_common_ground", "origin_hegemon","origin_knights_of_the_toxic_god", "origin_teachers_of_the_shroud", "origin_broken_shackels", "origin_fear_of_the_dark", "origin_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_fanatic_xenophobe", "ethic_militarist", "ethic_spiritualist"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_feudal_society",
+      "name": "Feudal Society",
+      "icon": "Civic_feudal_society.png",
+      "description": "This society is organized in a feudal manner, with a monarch whose rule relies on powerful vassals that govern their territories with considerable autonomy.",
+      "effects": ["+1% Unity per Governor level", "-50% Leader cost", "+1 Monthly loyalty from subjects", "-400 Unity per level of dismissed leaders", "Governors have no upkeep", "No loyalty loss from multiple subjects", "Cannot use Expansion Prohibited terms of agreement", "Cannot use Limited Diplomacy terms of agreement"],
+      "councilPosition": {
+        "position":"Chief Herald of Arms",
+        "effectsPerLeaderSkillLevel": ["+2 Naval Capacity per Subject Empire"],
+        "description": "The Chief Herald of Arms oversees the distribution of power and titles among subjects."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": ["auth_imperial"]
+      }
+    },
+    {
+      "id": "civic_free_haven",
+      "name": "Free Haven",
+      "icon": "Civic_free_haven.png",
+      "description": "This society has a well-earned reputation as a free haven. The tired, the poor, the huddled masses yearning to breathe free - all are welcome here, regardless of their species or origin.",
+      "effects": ["+15% Pop growth from immigration", "+50% Immigration pull"],
+      "councilPosition": {
+        "position":"Integration Facillator",
+        "effectsPerLeaderSkillLevel": ["-3% Empire Size from Districts", "-3% District Upkeep"],
+        "description": "The Integration Facilitator is in charge of integration and employment of new citizens."
+      },
+      "requirements": {
+        "excludesCivics": ["civic_corvee_system"],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_xenophile", "ethic_fanatic_xenophile"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_functional_architecture",
+      "name": "Functional Architecture",
+      "icon": "Civic_functional_architecture.png",
+      "description": "This society is renowned for its simple yet functional architecture. There are those who would refer to this building style as boring or even depressing, but in most cases, concrete does the job just as well as any other building material.",
+      "effects": ["-15% Building and district cost", "+1 Building slots"],
+      "councilPosition": {
+        "position":"Master Architect",
+        "effectsPerLeaderSkillLevel": ["+2% Planetary Build Speed"],
+        "description": "The Master Architect ensures simplicity and lean practices are upheld and valued."
       },
       "requirements": {
         "excludesCivics": [],
@@ -357,6 +418,87 @@
         "excludesAuthorities": [],
         "requiresEthics": [],
         "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_heroic_past",
+      "name": "Heroic Past",
+      "icon": "Civic_heroic_past.png",
+      "description": "The legendary heroes of the past inspire this civilizations young people to achieve the extraordinary. As role models, government officials are expected to embody these ideals. ",
+      "effects": ["+1 Leader Starting Traits", "- Maximum Negative Traits"],
+      "councilPosition": {
+        "position":"Grand Storyteller",
+        "effectsPerLeaderSkillLevel": ["+2% Leader Experience Gain", "+2% Governing Ethics Attraction"],
+        "description": "Stories from the past contain much wisdom. Grand Storytellers inspire the population with traditional heroic tales. "
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_idealistic_foundation",
+      "name": "Idealistic Foundation",
+      "icon": "Civic_idealistic_foundation.png",
+      "description": "This society was founded on strong idealistic values. Whether the current government remains true to them or not, the people have not forgotten.",
+      "effects": ["+10% Citizen pop happiness"],
+      "councilPosition": {
+        "position":"Tribune of Rights",
+        "effectsPerLeaderSkillLevel": ["-1.5% Pop Amenities Usage"],
+        "description": "The Tribune of Rights protects the rights of citizens, building trust in society and government."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_egalitarian", "ethic_fanatic_egalitarian"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_idyllic_bloom",
+      "name": "Idyllic Bloom",
+      "icon": "Civic_idyllic_boom.png",
+      "description": "This society has always spent much time on improving and caring for their environment, in pursuit of building a true paradise for its inhabitants.",
+      "effects": ["Cannot be added or removed after game start", "Can construct and upgrade Gaia Seeders buildings", "Can construct Gaia Seeder Outpost holdings", "Start with a Gaia Seeders - Phase 1 building", "Disabled by synthetic ascension special project"],
+      "councilPosition": {
+        "position":"Bloom Herald",
+        "effectsPerLeaderSkillLevel": ["-5% Gaia Seeder Build Cost", "-5% Gaia Seeder Upkeep"],
+        "description": "The Bloom Herald oversees all Gaia Seeder initiatives. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_relentless_industrialist"],
+        "excludesOrigins": ["origin_void_dwellers"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": [],
+        "requiresArchetype":"plant"
+      }
+    },
+    {
+      "id": "civic_imperial_cult",
+      "name": "Imperial Cult",
+      "icon": "Civic_imperial_cult.png",
+      "description": "This society has a dominant state religion where the ruler is worshiped as a living deity.",
+      "effects": ["+100 Edict fund"],
+      "councilPosition": {
+        "position":"Prime Herald",
+        "effectsPerLeaderSkillLevel": ["+2% Priest Output"],
+        "description": "The Prime Herald is in charge of our spiritual narrative."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_authoritarian", "ethic_fanatic_authoritarian", "ethic_spiritualist", "ethic_fanatic_spiritualist"],
+        "requiresAuthorities": ["auth_imperial"]
       }
     },
     {
@@ -379,14 +521,35 @@
       }
     },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_inward_perfection",
+      "name": "Inward Perfection",
+      "icon": "Civic_inward_perfection.png",
+      "description": "This calm and pacifist society has little use for strangers who do not understand their way of life. More than anything, they would prefer to be left alone.",
+      "effects": ["Cannot be added or removed after game start", "+20% Monthly unity", "+10% Pop growth speed", "+5% Citizen pop happiness", "+50 Edict Fund", "+1 Encryption", "-Codebreaking", "-1 Availabe envoys", "Cannot infiltrate Pre-FTL civilizations", "Diplomatic restrictions"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Commander of the Watch",
+        "effectsPerLeaderSkillLevel": ["+3% Defense Platform Damage", "3% Defense Platform Hull Points"],
+        "description": "The Commander of the Watch is in charge of the vigilant watch protecting our borders."
+      },
+      "requirements": {
+        "excludesCivics": ["civic_pompous_purists", "civic_eager_explorers", "civic_fear_of_the_dark"],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_pacifist", "ethic_fanatic_pacifist", "ethic_xenophobe", "ethic_fanatic_xenophobe"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_masterful_crafters",
+      "name": "Masterful Crafters",
+      "icon": "Civic_masterful_crafters.png",
+      "description": "A penchant for meticulous crafting lies at the heart of this society. Deft appendages and keen sensory organs aid them in creating truly wondrous treasures even in the most basic of trades.",
+      "effects": ["Replaces Artisan jobs with Artificers jobs", "+1 Building slot per 3 Industrialist districts (except on Habitats) (+0.34 each)"],
+      "councilPosition": {
+        "position":"Master Crafter",
+        "effectsPerLeaderSkillLevel": ["+1% Armor Hit Points"],
+        "description": "The Master Crafter oversees craftsmanship in military applications."
       },
       "requirements": {
         "excludesCivics": [],
@@ -398,52 +561,55 @@
       }
     },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_memorialists",
+      "name": "Memorialists",
+      "icon": "Civic_memorialists.png",
+      "description": "This empire pays tribute to memories and sapients of the past, deriving greater stability and insight from the continuous cycles of death, rebirth and legacy.",
+      "effects": ["Autochthon Monument buildings are replaced by Sanctuary of Repose buildings", "Gain additional Unity from Leviathan Parade Oppurtunity Situations"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"High Curator",
+        "effectsPerLeaderSkillLevel": ["+2% Monthly Unity"],
+        "description": "The High Curator oversees the Memorial Sanctuaries. "
       },
       "requirements": {
-        "excludesCivics": [],
+        "excludesCivics": ["civic_fanatic_purifiers"],
         "excludesOrigins": [],
         "excludesEthics": [],
         "excludesAuthorities": [],
         "requiresEthics": [],
         "requiresAuthorities": []
       }
-    }
+    },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_merchant_guilds",
+      "name": "Merchant Guilds",
+      "icon": "Civic_merchant_guilds.png",
+      "description": "A number of powerful and very influential merchant guilds have risen to prominent positions in this society. They hold significant sway with the government.",
+      "effects": ["Capital Buildings replace some Politician jobs with Merchant jobs", "Can use the Mercantile Diplomatic Stance (unless also Inward Perfection"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Director of Trade",
+        "effectsPerLeaderSkillLevel": ["+0.4 Trade Value from Clerks"],
+        "description": "The Director of Trade is responsible for generating trade. "
       },
       "requirements": {
-        "excludesCivics": [],
+        "excludesCivics": ["civic_exalted_priesthood","civic_aristocratic_elite", "civic_technocracy"],
         "excludesOrigins": [],
         "excludesEthics": [],
         "excludesAuthorities": [],
         "requiresEthics": [],
         "requiresAuthorities": []
       }
-    }
+    },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_meritocracy",
+      "name": "Meritocracy",
+      "icon": "Civic_meritocracy.png",
+      "description": "An individual's social station or personal connections should have no bearing on their profession. The sole basis for advancement in this society is demonstrated ability and talent.",
+      "effects": ["+1 Additional leader trait options", "+10% Specialist pop resource output"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Principal Instructor",
+        "effectsPerLeaderSkillLevel": ["+2% Leader Experience Gain"],
+        "description": "The Principal Instructor oversees training and development for all important leaders."
       },
       "requirements": {
         "excludesCivics": [],
@@ -451,18 +617,19 @@
         "excludesEthics": [],
         "excludesAuthorities": [],
         "requiresEthics": [],
-        "requiresAuthorities": []
+        "requiresAuthorities": ["auth_democratic", "auth_oligarhic"]
       }
-    }
+    },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "ciivc_mining_guilds",
+      "name": "Mining Guilds",
+      "icon": "Civic_mining_guilds.png",
+      "description": "Several large mining guilds have reached a dominant position in this society. The government relies heavily on their support.",
+      "effects": ["+1 Minerals from Miner category jobs"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Chairman of the Mines",
+        "effectsPerLeaderSkillLevel": ["+0.05 Stability from Miners"],
+        "description": "The Chairman of the Mines represents the mining guilds, whose influence helps to maintain order. "
       },
       "requirements": {
         "excludesCivics": [],
@@ -472,16 +639,218 @@
         "requiresEthics": [],
         "requiresAuthorities": []
       }
-    }
+    },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
-      "description": "",
-      "effects": [],
+      "id": "civic_mutagenic_spas",
+      "name": "Mutagenic Spas",
+      "icon": "Civic_mutagenic_spas.png",
+      "description": "This civilization engages in ritualistic mutagenic bathing, with professional attendants overseeing the use of highly dangerous substances. This 'invigorating' process may appall uninitiated onlookers.",
+      "effects": ["Can construct Mutagenic Spa buildings"],
       "councilPosition": {
-        "effectsPerLeaderSkillLevel": [],
-        "description": ""
+        "position":"Warden of the Baths",
+        "effectsPerLeaderSkillLevel": ["+0.05 Unity from Mutagenic Spa Attendants"],
+        "description": "The Warden of the Baths promotes the importance and benefits of the bathing rituals."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": ["origin_life_seeded"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_nationalistic_zeal",
+      "name": "Nationalistic Zeal",
+      "icon": "Civic_nationalistic_zeal.png",
+      "description": "A strong sense of nationalistic pride permeates all layers of this society. ",
+      "effects": ["-20% War Exhaution gain", "-15% Claim influence cost"],
+      "councilPosition": {
+        "position":"Standard Bearer",
+        "effectsPerLeaderSkillLevel": ["+1% Naval capacity"],
+        "description": "The Standard Bearer is the champion and pride of our society."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_militarist", "ethic_fanatic_militarist"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_oppressive_autocracy",
+      "name": "Oppressive Autocracy",
+      "icon": "Civic_oppressive_autocracy.png",
+      "description": "Only the elite of the elite deserve the best of the best. Everyone else is expected to provide for the ruling class and their lackeys.",
+      "effects": ["Cannot be added or removed after game start", "Must use the Dystopian Society living standard", "Start with a Presinct Houses building", "Cannot construct Holo-Threatres", "Only Rulers and Enforcers produce and use Amenities", "+1 Leader Capacity", "-20% Leader Upkeep", "+1 Crime per Pop"],
+      "councilPosition": {
+        "position":"Primary Overseer",
+        "effectsPerLeaderSkillLevel": ["+1% Ruler Happiness", "+0.02 Unity from Enforcers"],
+        "description": "The Primary Overseer seeks out corruption and extinguishes it before it can spread."
+      },
+      "requirements": {
+        "excludesCivics": ["civic_agrarian_idyll", "civic_environmentalist", "civic_free_haven", "civic_warrior_culture", "civic_pleasure_seekers"],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": ["auth_authoritarian", "ethic_fanatic_authoritarian"]
+      }
+    },
+    {
+      "id": "civic_parlimentary_system",
+      "name": "Parlimentary System",
+      "icon": "Civic_parlimentary_system.png",
+      "description": "The parliamentary system in this society encourages a free and lively debate. Currying favor with one of the dominant political factions can prove to be quite advantageous.",
+      "effects": ["+40% Faction unity gain", "Factions will form within 3 months"],
+      "councilPosition": {
+        "position":"Speaker of Parliament",
+        "effectsPerLeaderSkillLevel": ["+3% Council Agenda Speed"],
+        "description": "The Speaker of Parliament ensures our parliament is focusing on the most relevant issues. "
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": ["auth_democratic"]
+      }
+    },
+    {
+      "id": "civic_philosopher_king",
+      "name": "Philosopher King",
+      "icon": "Civic_philosopher_king.png",
+      "description": "It is not enough to simply rule. The Ship of State must be guided by a king that wields enough wisdom and knowledge to steer it true.",
+      "effects": ["+20% Councilor experience gain", "-1 Leader maximum negative traits"],
+      "councilPosition": {
+        "position":"Lord Chancelor",
+        "effectsPerLeaderSkillLevel": ["+3% Councilor Experience Gain"],
+        "description": "The Lord Chancellor serves to advise the council in all matters."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": ["auth_dictatorial", "auth_imperial"]
+      }
+    },
+    {
+      "id": "civic_pleasure_seekers",
+      "name": "Pleasure Seekers",
+      "icon": "Civic_pleasure_seekers.png",
+      "description": "This society rejoices in its own perfection. Those who are elevated by their privileged social structure have surrendered to a culture which glorifies pleasure and entertainment, regardless of a cost typically borne by others. ",
+      "effects": ["Can use the Decadent Lifestyle living standard", "+1 Pop growth speed from Entertainers", "+5 Amenities"],
+      "councilPosition": {
+        "position":"Minister of Extravagance",
+        "effectsPerLeaderSkillLevel": ["+4% Ruler Happiness"],
+        "description": "The Minister of Extravagance wields a substantial budget for keeping the privileged lavishly entertained. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_slaver_guilds", "civic_warrior_culture", "civic_shared_burdens"],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_police_state",
+      "name": "Police State",
+      "icon": "Civic_police_state.png",
+      "description": "To quash any traces of dissent, the population in this repressive society is carefully monitored and controlled by a large internal police force. ",
+      "effects": [
+        "+5 Stability", "+1 Unity from Enforcers and Telepaths"
+      ],
+      "councilPosition": {
+        "position":"Chief of Secret Police",
+        "effectsPerLeaderSkillLevel": ["+5% Governing Ethics Attraction"],
+        "description": "The Chief of Secret Police ensures any internal threats or dissidents within our society are swiftly dealt with. "
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": ["ethic_fanatic_egalitarian"],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_pompous_purists",
+      "name": "Pompous Purists",
+      "icon": "Civic_pompous_purists.png",
+      "description": "A society so utterly convinced of their own superiority, that any attempt at diplomacy not initated by themselves will be utterly ignored.",
+      "effects": ["+30% Trust growth", "+2 Available envoys"],
+      "councilPosition": {
+        "position":"Grand Marshal",
+        "effectsPerLeaderSkillLevel": ["+2% Diplomatic Weight"],
+        "description": "The Grand Marshal is a ceremonial position for impressing alien dignitaries. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_inward_perfectionist"],
+        "excludesOrigins": ["origin_scion", "origin_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_xenophobe", "ethic_fanatic_xenophobe"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_reanimators",
+      "name": "Reanimators",
+      "icon": "Civic_reanimators.png",
+      "description": "Within this society, death is no bar to the call of arms. Masters of the art of necromancy reanimate deceased corpses to raise a dread host that strikes fear into the hearts of lesser mortals.",
+      "effects": ["Military Academy buildings are replaced by Dread Encampment buildings", "33% chance to gain an Undead Army per killed organic army", "Defeated organic guardians can be resurrected"],
+      "councilPosition": {
+        "position":"Master Necromancer",
+        "effectsPerLeaderSkillLevel": ["+0.5 Unity from Necromancers"],
+        "description": "The Master Necromancer guards the secret arts and ordains new necromancers."
+      },
+      "requirements": {
+        "excludesCivics": ["civic_citizen_service"],
+        "excludesOrigins": [],
+        "excludesEthics": ["ethic_pacifist", "ethic_fanatic_pacifist"],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_relentless_industrialists",
+      "name": "Relentless Industrialists",
+      "icon": "Civic_relentless_industrialists.png",
+      "description": "To live is to exploit. This civilization is built around the principle of living life to the fullest, in the sense of squeezing the maximum profit from every last ounce of matter and membrane available for exploitation.",
+      "effects": ["Can construct Coordinated Coordinated Fulfillment Center buildings", "Strat wtih a Coordinated Fulfillment Center building", "First time a world is polluted triggers the Environmental Deterioration situation"],
+      "councilPosition": {
+        "position":"Chief Extraction Officer",
+        "effectsPerLeaderSkillLevel": ["+2% Minerals from Miners"],
+        "description": "The Chief Extraction Officer will exploit anyone and anything to ensure industrial expansion. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_agrarian_idyll", "civic_environmentalist", "civic_idyllic_bloom", "civic_memorialists"],
+        "excludesOrigins": ["origin_life_seeded"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_scavangers",
+      "name": "Scavanger",
+      "icon": "Civic_scavanger.png",
+      "description": "In this society, nothing goes to waste, even in the grimmest times of war: no enemy technology will go undiscovered, as teams of scrappers accompanying the war fleets scrape wreckages of anything and everything worth salvaging.",
+      "effects": ["Enables the Research & Salavage Debris debris policy", "10% chance per ship debris to create a a ship of equal size", "+10 Opnion with the Salvagers enclave"],
+      "councilPosition": {
+        "effectsPerLeaderSkillLevel": ["+1% Chance to Salavage Ships "],
+        "description": "The Master Scrapper is in charge of refining the salvaging process of scavenged ships."
       },
       "requirements": {
         "excludesCivics": [],
@@ -491,7 +860,127 @@
         "requiresEthics": [],
         "requiresAuthorities": []
       }
-    }
+    },
+    {
+      "id": "civic_shadow_council",
+      "name": "Shadow Council",
+      "icon": "Civic_shadow_council.png",
+      "description": "Unbeknownst to its own citizens, this society is actually manipulated from behind the scenes by a secretive shadow council. Appearances must be kept, but the tyranny of the majority should also be guarded against. After all, what if the fools vote for the wrong candidate?",
+      "effects": ["-75% Election Cost", "+10% Ruler pop resource output", "+1 Codebreaking"],
+      "councilPosition": {
+        "position":"Shadow Councilor",
+        "effectsPerLeaderSkillLevel": ["-4% Ruler Upkeep"],
+        "description": "Officially, the Shadow Councilor is merely an observer, but may have a hidden agenda."
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": ["auth_imperial"],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_shared_burdens",
+      "name": "Shared Burdens",
+      "icon": "Civic_shared_burdens.png",
+      "description": "This society believes in an equitable distribution of resources, making little to no distinction between the needs of ruler and ruled. All work together for the benefit of the whole.",
+      "effects": ["Can use the Shared Burden living standard", "Cannot use other Living Standards except Utopian Abundance and Chemical Blizz", "+5 Stability", "-45% Pop Demotion Time", "Can build Communal Housing and Utopian Communal Housing buildings", "Can construct Communal Housing Outreach holdings"],
+      "councilPosition": {
+        "position":"Head Arbiter",
+        "effectsPerLeaderSkillLevel": ["+2% Worker Pop Resource Output"],
+        "description": "The Head Arbiter makes sure any grievances are settled promptly. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_pleasure_seekers", "civic_technocracy"],
+        "excludesOrigins": [],
+        "excludesEthics": ["ethic_xenophobe", "ethic_fanatic_xenophobe"],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_fanatic_egalitarian"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_slave_guilds",
+      "name": "Slave Guilds",
+      "icon": "Civic_slave_guilds.png",
+      "description": "Much of the true political power in this society rests with a number of powerful and ruthless slaver guilds. They know how to get the most out of a slave. ",
+      "effects": ["+10% Slave pop resource output", "35% Enslaved pop ratio"],
+      "councilPosition": {
+        "position":"Labor Magistrate",
+        "effectsPerLeaderSkillLevel": ["+2% Slave Happiness"],
+        "description": "The Labor Magistrate oversees the treatment of slaves, to prevent unnecessary bloodshed. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_pleasure_seekers"],
+        "excludesOrigins": ["origin_payback"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_authoritarian", "ethic_fanatic_authoritarian"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_technocracy",
+      "name": "Technocracy",
+      "icon": "Civic_technocracy.png",
+      "description": "To maximize efficiency, this society is governed according to the principles of science and rationality. The personal whims of an ignorant and dangerously unqualified political elite must not be allowed to interfere. ",
+      "effects": ["+1 Research alternatives", "Capital Buildings replace some Politician jobs with Science Director jobs", "Scientists start with a random Expertise trait"],
+      "councilPosition": {
+        "position":"Senior Science Director",
+        "effectsPerLeaderSkillLevel": ["-2% Researcher Upkeep"],
+        "description": "The Senior Science Director ensures fundamental research is promoted and shared between departments. "
+      },
+      "requirements": {
+        "excludesCivics": ["civic_aristocratic_elite", "civic_exalted_priesthood", "civic_merchant_guilds", "civic_shared_burdens"],
+        "excludesOrigins": [],
+        "excludesEthics": [""],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_materialsit", "ethic_fanatic_materialist"],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_vaults_of_knowledge",
+      "name": "Vaults of Knowledge",
+      "icon": "Civic_vaults_of_knowledge.png",
+      "description": "The knowledge, principles, and experiences of exceptional people are digitized and accumulated in the Vaults of Knowledge. Citizens can access this source of wisdom and experience to learn from the ghosts of the past.",
+      "effects": ["+1 Leader Starting Level", "+1 Effective Councilor level", "Can construct Vaults of Knowledge buildings", "Start with a Vaults of Knowledge building"],
+      "councilPosition": {
+        "position":"Keeper of the Vaults",
+        "effectsPerLeaderSkillLevel": ["-2% Leader Upkeep", "-2% Leader Cost"],
+        "description": "The Keeper of the Vaults is responsible for maintaining vast archives of knowledge stored deep in vaults, and distributing this knowledge to those who seek it. "
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [],
+        "requiresAuthorities": []
+      }
+    },
+    {
+      "id": "civic_warrior_culture",
+      "name": "Warrior Culture",
+      "icon": "Civic_warrior_culture.png",
+      "description": "This society has developed into a hardy warrior culture. Martial prowess is valued above all else, and true glory can only be found on the field of battle.",
+      "effects": ["Replaces Entertainer jobs", "+20% Army damage", "+1 Mercenary Enclave capacity"],
+      "councilPosition": {
+        "position":"Arbiter of Duels",
+        "effectsPerLeaderSkillLevel": ["+10% Duelists output"],
+        "description": "The Arbiter of Duels is responsible for maintaining dueling etiquette, and overseeing the correct execution of warfare protocols. "
+      },
+      "requirements": {
+        "excludesCivics": [],
+        "excludesOrigins": [],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": ["ethic_militarist", "ethic_fanatic_militarist"],
+        "requiresAuthorities": []
+      }
+    },
     {
       "id": "",
       "name": "",
