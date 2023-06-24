@@ -1,17 +1,496 @@
 {
   "hiveMindCivics": [
     {
-        "id": "civic_",
-        "name": "",
-        "icon":"Civic_",
-        "description": "",
-        "effects": [""],
-        "councilPosition": {
-          "position": "",
-          "effectsPerLeaderSkillLevel": [""],
-          "description": ""
-        },
+      "id": "civic_ascetic",
+      "name": "Ascetic",
+      "icon": "Civic_ascetic.png",
+      "description": "The Hive Mind cares little for material comforts.",
+      "effects": ["+5% Habitability", "-15% Pop amenities usage"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
       "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": [""]
+      }
+    },
+    {
+      "id": "civic_autonomous_drones",
+      "name": "Autonomous Drones",
+      "icon": "Civic_autonomous_drones.png",
+      "description": "The hypermetabolic drones evolved in this colony possess increased autonomy. While decision-making and situation assessment are enhanced, these drones require an increased intake of digestible materials.",
+      "effects": [
+        "+1 Leader Capacity",
+        "+25% Deviance Suppression Node Experience Gain",
+        "-1 Unity Leader Upkeep",
+        "+2 Food Leader Upkeep if not Lithoid",
+        "+2 Minerals Leader Upkeep if Lithoid"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_cordyceptic_drones",
+      "name": "Cordyceptic Drones",
+      "icon": "Civic_cordyceptic_drones.png",
+      "description": "Highly specialized drones capable of infecting simple hosts and issuing rudimentary commands make up the backbone of this hive's stellar defense.",
+      "effects": [
+        "Can construct Cordyceptic Reanimation",
+        "Facility starbase buildings",
+        "Defeated space fauna is resurrected",
+        "Defeated organic guardians can be resurrected"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_devouring_swarm",
+      "name": "Devouring Swarm",
+      "icon": "Civic_devouring_swarm.png",
+      "description": "Our Hive Mind exist only to consume and grow stronger. We will collect all available bio-matter and evolve to consume the galaxy!",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "+25% Ship hull points",
+        "+5% Daily hull and armor regeneration",
+        "-50% Starbase influence cost",
+        "+40% Army damage",
+        "+20% Biology research speed",
+        "-25% Ship cost",
+        "+33% Naval capacity",
+        "+200 Food when clearing Dangerous Wildlife blockers",
+        "Cannot terraform planets",
+        "Genocidal"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesTrait": "trait_lithoid",
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_divided_attention",
+      "name": "Divided Attention",
+      "icon": "Civic_divided_attention.png",
+      "description": "The Hive Mind can divide its attention for maximum efficiency without losing sight of the bigger picture.",
+      "effects": ["-50% Empire size from planets"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_elevational_contemplations",
+      "name": "Elevational Contemplations",
+      "icon": "Civic_elevational_contemplations.png",
+      "description": "The Hive Mind is particularly concerned with the metaphysical health of its being, and continually seeks means of self-improvement.",
+      "effects": [
+        "+25% Planetary ascension effects",
+        "-10% Planetary ascension cost",
+        "-25% Tradition cost from empire size"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_empath",
+      "name": "Empath",
+      "icon": "Civic_empath.png",
+      "description": "The Hive Mind can reach out and touch the minds of others, giving them a glimpse of our will that helps them understand.",
+      "effects": [
+        "+2 Availabe envoys",
+        "+10% Diplomatic weight",
+        "+20 Opinion with individualist empires"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": ["civic_devouring_swarm", "civic_terravore"],
+        "excludesOrigins": ["origin_necrophage"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_hive_idyllic_bloom",
+      "name": "Idyllic Bloom",
+      "icon": "Civic_hive_idyllic_bloom.png",
+      "description": "The Hive Mind cares for the environment, building a paradise in pursuit of synergistic perfection.",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "Can construct and upgrade Gaia Seeders buildings",
+        "Can construct Gaia Seeder Outpost Holdings",
+        "Start with a Gaia Seeders - Phase 1 building"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "reuireredSpecies": ["plantoid", "fungoid"],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_hive_memorialist",
+      "name": "Memorialist",
+      "icon": "Civic_hive_memorialist.png",
+      "description": "The Hive Mind pays special regard to the passing of other sapient entities as a means of centering its own, undying self.",
+      "effects": [
+        "Sensorium Side buildings are replaced by Sanctuary of Repose buildings",
+        "Gain additional Unity from Leviathan Parade Opportunity situations"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": ["civic_devouring_swarm", "civic_terravore"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_natural_neural_network",
+      "name": "Natural Neural Network",
+      "icon": "Civic_natural_neural_network.png",
+      "description": "The gray matter of clustered drones provides unparalleled parallelism, accelerating the Hive Mind's exploration of the sciences.",
+      "effects": [
+        "+1 Research alternatives",
+        "+1 Physics/Society/Engineering Research from unemployed drones"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_neural_vaults",
+      "name": "Neural Vaults",
+      "icon": "Civic_neural_vaults.png",
+      "description": "This hive is focused on introspection and learning from the lives of autonomous drones in the galaxy. It extracts memories through the storage and dissolution of brain tissue, through which it can implement partial memories into a freshly prepared drone. ",
+      "effects": [
+        "+1 Leader Starting Level",
+        "+10% Leader Experience Gain",
+        "+25% Cognitive Node Experience Gain",
+        "+10% Society Research from Jobs",
+        "Can construct Vaults of Knowledge buildings",
+        "Start with a Vault of Knowledge building"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_one_mind",
+      "name": "One Mind",
+      "icon": "Civic_one_mind.png",
+      "description": "The Hive Mind takes care to not let its drones diverge.",
+      "effects": [
+        "+15% Monthly Unity",
+        "Leaders are less likely to gain negative traits"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_organic_reprocessing",
+      "name": "Organic Reprocessing",
+      "icon": "Civic_organic_processing.png",
+      "description": "The Hive Mind reprocesses excess organic matter into advanced resources suitable for spacebound structures.",
+      "effects": ["Replaces Foundry Drone jobs with Catalytic Drone jobs"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_calamitous_birth"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_permutation_pools",
+      "name": "Permutation Pools",
+      "icon": "Civic_permutation_pools.png",
+      "description": "This hive mind utilizes mutagenic birthing pools, with specialized attendants overseeing the growth of newly spawned drones. This process is highly intrusive for the local environment.",
+      "effects": ["Can construct Mutagenic Permutation Pool buildings"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": ["origin_life_seeded"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_pooled_knowledge",
+      "name": "Pooled Knowledge",
+      "icon": "Civic_pooled_knowledge.png",
+      "description": "The Hive Minds' autonomous drones frequently share knowledge through direct links, bypassing the Hive Mind's slower registry processes.",
+      "effects": [
+        "+1 Leader Capacity",
+        "+10% Leader Experience Gain",
+        "+25% Cognitive Node Experience Gain",
+        "+1 Encryption"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_hive_stargazers",
+      "name": "Stargazers",
+      "icon": "Civic_hive_stargazers.png",
+      "description": "Gazing with wonder at the night sky, this Hive has always yearned for exploration. In pursuit of this ambition, other forms of development were sidelined, and a small fleet of vessels capable of limited subspace travel was constructed.",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "Start with 10 fewer pops",
+        "Start with Subspace Drive technology",
+        "Main species has the Stargazer trait",
+        "Know the layout of all systems within 3 hyperlane jumps",
+        "+1 Sensor Range",
+        "+2 Hyperlane Detection Range",
+        "-20% Starbase influence Cost",
+        "Start without Research Labs",
+        "Start without a fleet",
+        "Start with a second science ship",
+        "Start with a second scientist",
+        "Certain starting technologies are not researched but available as permanent options"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [
+          "origin_broken_shackles",
+          "origin_fear_of_the_dark",
+          "origin_payback"
+        ],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_strength_of_legions",
+      "name": "Strength of Legions",
+      "icon": "Civic_strength_of_legions.png",
+      "description": "When you do not have to educate the mind, the building of muscle becomes that much easier.",
+      "effects": [
+        "+20% Army damage",
+        "-20% Army upkeep",
+        "+100% Army starting experience",
+        "+2 Admiral and General starting level"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_subspace_ephapse",
+      "name": "Subspace Ephapse",
+      "icon": "Civic_subspace_ephapse.png",
+      "description": "The Hive Mind's cognitive processes exist partially in subspace, reducing the impact of time and space on the actuation of its drones.",
+      "effects": ["+15% Naval capacity", "+20% Sublight speed"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_subsumed_will",
+      "name": "Subsumed Will",
+      "icon": "Civic_subsumed_will.png",
+      "description": "The Hive Mind has sharpened its focus and is very capable of propagating its will even through the most autonomous of drones.",
+      "effects": [
+        "-20% Empire size from Pops",
+        "+25 Edict fund",
+        "Removes unity costs for pop resettlement"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_hive_mind"]
+      }
+    },
+    {
+      "id": "civic_terravore",
+      "name": "Terravore",
+      "icon": "Civic_terravore.png",
+      "description": "Our Hive Mind exist only to consume and grow stronger. We will devour the very worlds of the galaxy!",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "+25% Ship hull points",
+        "+5% Daily hull and armor regeneration",
+        "-50% Starbase influence cost",
+        "+40% Army damage",
+        "+20% Biology research speed",
+        "-25% Ship cost",
+        "+33% Naval capacity",
+        "Cannot terraform planets",
+        "Can use the Consume World decision",
+        "Genocidal"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "reuireredSpecies": "lithoid",
         "excludesCivics": [""],
         "excludesOrigins": [""],
         "excludesEthics": [],
