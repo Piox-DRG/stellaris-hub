@@ -1,0 +1,24 @@
+{
+  "robotCivics": [
+    {
+        "id": "civic_",
+        "name": "",
+        "icon":"Civic_",
+        "description": "",
+        "effects": [""],
+        "councilPosition": {
+          "position": "",
+          "effectsPerLeaderSkillLevel": [""],
+          "description": ""
+        },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    }
+  ]
+}
