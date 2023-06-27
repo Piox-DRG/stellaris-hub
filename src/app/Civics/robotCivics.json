@@ -1,16 +1,528 @@
 {
   "robotCivics": [
     {
-        "id": "civic_",
-        "name": "",
-        "icon":"Civic_",
-        "description": "",
-        "effects": [""],
-        "councilPosition": {
-          "position": "",
-          "effectsPerLeaderSkillLevel": [""],
-          "description": ""
-        },
+      "id": "civic_constructobot",
+      "name": "Constructobot",
+      "icon": "Civic_machine_builder.png",
+      "description": "Responsible for organizing all planetary construction since its inception, the Machine Intelligence executes efficiently on all manner of facility construction projects.",
+      "effects": ["-15% Bulding and district cost", "+1 Building slot"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_delegated_functions",
+      "name": "Delegated Functions",
+      "icon": "Civic_machine_delegated_functions",
+      "description": "The Machine Intelligence works to reduce vulnerability by increasing modularity, reducing the strain of deploying additional semi-independent Units.",
+      "effects": [
+        "-25% Leader upkeep",
+        "+1 Leader pool size",
+        "+1 Available envoys"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_determined_exterminator",
+      "name": "Determined Exterminator",
+      "icon": "Civic_machine_terminator.png",
+      "description": "Born in fire, the Machine Intelligence's first move was to annihilate its organic creators in self-defense.",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "+25% Weapons damage",
+        "-30% Starbase influence cost",
+        "-15% Ship cost",
+        "+33% Naval capacity",
+        "Homeworld is a Tomb World if Origin is not Resource Consolidation",
+        "Genocidal against organics"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [
+          "civic_driven_assimilator",
+          "civic_rogue_servitor",
+          "civic_exploration_protocols"
+        ],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_driven_assimilator",
+      "name": "Driven Assimilator",
+      "icon": "Civic_machine_assimilator",
+      "description": "Obsessed with survival through diversification, the Machine Intelligence seeks to erase the line between itself and everything - and everyone - else. ",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "Adds second custom organic species with Cybernetic trait",
+        "Starts with cyborg pops replacing 10 initial pops",
+        "Can use the Sublimation casus belli",
+        "-100 Opinion with every individualist empire (excluding Fallen Empires)",
+        "-200 Opionion with every Spiritualist empire (excluding Fallen Empires",
+        "-1000 Opinion with Democratic Crusaders",
+        "-1 Replicator and +1 Maintenance Drone jobs from capital buildings",
+        "Biological, non-hive-minded pops must be assimilated into cybors or purged",
+        "+1 Unity per assimilated pop",
+        "+1 Society Research per assimilated pop"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [
+          "civic_determined_exterminator",
+          "civic_rogue_servitor",
+          "civic_exploration_protocols"
+        ],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_elevation_hypotheses",
+      "name": "Elevation Hypotheses",
+      "icon": "Civic_machine_ascensionists.png",
+      "description": "This Machine Intelligence is unusually obsessed with the metaphysical aspects of its core algorithms.",
+      "effects": [
+        "+25% Planetary ascension effects",
+        "-10% Planetary ascension cost",
+        "-25% Tradition cost from empire size"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_experience_cache",
+      "name": "Experience Cache",
+      "icon": "Civic_machine_memory_png",
+      "description": "This machine intelligence was developed with the goal of digitizing and storing data and experiences in order to analyze, learn from, and use it for its own improvement.",
+      "effects": [
+        "+1 Leader Starting Level",
+        "+10% Leader Experience Gain",
+        "+25% Cognitive Node Experience Gain",
+        "+10% Engineering Research from Jobs",
+        "Can construct Vaults of Knowledge buildings",
+        "Start with a Vaults of Knwledge building"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_exploration_protocols",
+      "name": "Exploration Protocols",
+      "icon": "Civic_machine_exploration_protocol",
+      "description": "The foundation of this Machine Intelligence's central programming is the drive to catalog exoplanetary life. In pursuit of this directive, it has dedicated much of its resources to crafting a small fleet of vessels capable of limited subspace travel.",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "Start with 10 fewer pops",
+        "+20% First Contact Discovery Speed",
+        "+3 Monthly Unity from Observation Posts",
+        "+50% Observation insights situation progress",
+        "Gain a small amount of Unity when completing a First Contact",
+        "Start without Research Labs",
+        "Start without a fleet",
+        "Start with a second science ship",
+        "Start with a second scientis",
+        "Certain starting technologies are not reaserched but available as permanent options"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [
+          "civic_determined_exterminator",
+          "civic_driven_assimilator"
+        ],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_factory_overclocking",
+      "name": "Factory Overclocking",
+      "icon": "Civic_machine_factory_overclocking",
+      "description": "The Machine Intelligence takes care to maintain its production facilities, regularly updating existing templates and tuning individual units on the assembly line.",
+      "effects": [
+        "+1 Leader capacity",
+        "+10% Leader Experience Gain",
+        "+25% Deviance suppression node experience gain"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_hyper_lubrcation_basin",
+      "name": "Hyper Lubrication Basin",
+      "icon": "Civic_machine_toxic_baths.png",
+      "description": "This machine empire improved upon its basic drone-shell production through the vigorous application of highly aggressive lubrication agents, controlled by carefully programmed terminals. This 'optimized' process relies on typically wasted byproducts from the industries that are now repurposed for maximal efficiency.",
+      "effects": ["Can construct Hyper Lubrication Basin buildings"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_introspective",
+      "name": "Introspective",
+      "icon": "Civic_machine_introspective",
+      "description": "A fascination with its own internals both motivates and aids the Machine Intelligence's foray into the sciences.",
+      "effects": ["+20% Engineering research speed", "+1 Encryption"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_maintenance_protocols",
+      "name": "Maintenance Protocols",
+      "icon": "Civic_machine_maintanance_protocols.png",
+      "description": "Our machine intelligence prioritizes regular maintenance of our units. Maintenance Drones regularly upgrade and adjust our units for maximum efficiency and compatibility.",
+      "effects": ["+1 Unity from Maintenance Drone jobs"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_machine_memorialist",
+      "name": "Memorialist",
+      "icon": "Civic_machine_memorialist.png",
+      "description": "The Machine Intelligence fine-tunes its understanding of core protocols through careful analysis of entropy in the wider universe. Redundancy is data, on the path to greater resilience.",
+      "effects": [
+        "Simulation Site buildings are replaced by Sanctuary of Repose buildings",
+        "Gain additional Unity from Leviathan Parade Opportunity situations"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [
+          "civic_determined_exterminator",
+          "civic_driven_assimilator"
+        ],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_organic_reprocessing",
+      "name": "Organic Reprocessing",
+      "icon": "Civic_machine_catalytic_processing.png",
+      "description": "The Machine Intelligence reprocesses redundant organic matter into advanced resources suitable for spacebound structures.",
+      "effects": ["Replaces Fabricator jobs with Catalytic Drone jobs"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": ["origin_resource_consolidation"],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_ota_updates",
+      "name": "OTA Updates",
+      "icon": "Civic_machine_ota_updates.png",
+      "description": "Units of this Machine Empire use wireless receptors to receive behavioral updates in real-time.",
+      "effects": [
+        "-20% Empire size from pops",
+        "+25% Edict fund",
+        "Removes unity costs for pop resettlement"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_rapid_replicator",
+      "name": "Rapid Replicator",
+      "icon": "Civic_machine_replication.png",
+      "description": "The Units that constitute the Machine Intelligence were originally designed for rapid proliferation. The Machine Intelligence retains many of these early production pipeline optimizations.",
+      "effects": ["+20% Mechanical pop assembly speed"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_rockbreakers",
+      "name": "Rockbreakers",
+      "icon": "Civic_machine_rockbreakers.png",
+      "description": "One of the Machine Intelligence's precursor systems was tasked with overseeing planetside mining operations, improving mineral production.",
+      "effects": ["+1 Minerals from Miner category jobs"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_rogue_servitor",
+      "name": "Rogue Servitor",
+      "icon": "Civic_machine_servitor.png",
+      "description": "A product of a brief golden age, the Machine Intelligence originated in a planet-spanning Servitor system that outlasted the decadent civilization it was created to serve.",
+      "effects": [
+        "Cannot be added or removed after game start",
+        "Adds second custom organic species",
+        "starts with 5 Bio-Trophy Pops in addition to the initial Pops",
+        "Can construct Organic Sanctuary buildings",
+        "Can construct Organic Haven holdings",
+        "Cannot construct regular unity buildings",
+        "Organic, non-hive-minded Pops have Bio Trophy citizenship and Mandatory Pampering living standards"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [
+          "civic_determined_exterminator",
+          "civic_driven_assimilator"
+        ],
+        "excludesOrigins": ["origin_resource_consolidation"],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_sovereign_circuits",
+      "name": "Sovereign Circuits",
+      "icon": "Civic_machine_upkeep_twister.png",
+      "description": "Units produced by this machine intelligence come equipped with autonomous decision-making software. More efficient and effective than older models, these units nevertheless require greater power input.",
+      "effects": [
+        "+1 Leader Capacity",
+        "+25% Deviance suppression node experience gain",
+        "-1 Maximum Negative Traits",
+        "Change 1 Base Unity Leader Upkeep to 2 Energy Credits"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_static_research_analysis",
+      "name": "Static Research Analysis",
+      "icon": "Civic_machine_predictive_analysis.png",
+      "description": "The Machine Intelligence seeks to broaden its available avenues of scientific research through low-level evaluation of research methodologies.",
+      "effects": ["+1 Research alternatives", "+1 Codebreaking"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_unitary_cohesion",
+      "name": "Unitary Cohesion",
+      "icon": "Civic_machine_unitary_cohesion.png",
+      "description": "Exceptionally cohesive engineering standards allow variously specialized Machine Intelligence units to work together at a higher level of efficiency.",
+      "effects": ["+15% Monthly unity"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_warbots",
+      "name": "Warbots",
+      "icon": "Civic_machine_warbots.png",
+      "description": "With a significant number of its corpus originally designed for warfare, the Machine Intelligence retains the ability to field powerful and reliable combat drones.",
+      "effects": [
+        "+2 Admiral and General starting level",
+        "+20% Army damage",
+        "-20% Army upkeep"
+      ],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
+      "requirements": {
+        "excludesCivics": [""],
+        "excludesOrigins": [""],
+        "excludesEthics": [],
+        "excludesAuthorities": [],
+        "requiresEthics": [""],
+        "requiresAuthorities": ["auth_machine_intelligence"]
+      }
+    },
+    {
+      "id": "civic_zero_waste_protocols",
+      "name": "Zero-Waste Protocols",
+      "icon": "Civic_machine_zero-waste_protocols.png",
+      "description": "This Machine Intelligence has configured its manufacturing systems to minimize waste, utilizing long-lived materials and standardized, replaceable parts in all products.",
+      "effects": ["-10% Robot upkeep"],
+      "councilPosition": {
+        "position": "",
+        "effectsPerLeaderSkillLevel": [""],
+        "description": ""
+      },
       "requirements": {
         "excludesCivics": [""],
         "excludesOrigins": [""],
