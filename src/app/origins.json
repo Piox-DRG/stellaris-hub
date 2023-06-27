@@ -1,45 +1,560 @@
 {
-    "origins": [
-      {
-        "id": "origin_default",
-        "name": "Prosperous Unification",
-        "icon":"Origins_default.png" ,
-        "image": "origin_default.png" ,
-        "description": "The empire originates from a region of space teeming with dangerous creatures.",
-        "empire effects":["Planetary Unification technology starts as a permanent research option"],
-        "homeworld effects": [
-          "Start with 4 additional Pops",
-          "Start with 2 additional Districts built",
-          "+15% Happiness for 20 years",
-          "+25% Amenities for 20 years",
-          "+10% Resources from Jobs for 20 years"
-        ],
-        "requirments": null 
-      },
-
-      {
+  "origins": [
+    {
+      "id": "origin_prosperous_unification",
+      "name": "Prosperous_unification",
+      "icon": "Origins_default.png",
+      "image": "origin_default.png",
+      "description": "",
+      "empireEffects": [
+        "Planetary Unification technology starts as a permanent research option"
+      ],
+      "homeworldEffects": [
+        "Start with 4 additional Pops",
+        "Start with 2 additional District built",
+        "+15% Happiness for 20 years",
+        "+25 Amenities for 20 years",
+        "+10% Resources from Jobs for 20 years"
+      ],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
       "id": "origin_galactic_doorstep",
       "name": "Galactic Doorstep",
-      "icon": "Origins_gateway.png",
+      "icon": "Origin_gateway.png",
       "image": "origin_galactic_doorstep.png",
-      "description": "galactic doorstep",
-      "empire effects": [
-        "Start with a dormant Gateway which will bring the following in the first years: 100-1500 Alloys and/or Minerals; A small space amoeba; A special project that creates the From Gateway Sent archaeological site"
+      "description": "",
+      "empireEffects": [
+        "Start with a dromant Gateway which will bring the following in the first years: 100-1500 Alloys and/or Minerals; A small space amoeba; A special project that creates the From Gateway Sent archeological site",
+        "If the Gateway is reactivated it unlocks  the Gateway Construction technology"
       ],
-      "homeworld effects": null,
-      "requirments": null
-      },
-      {
-        "id": "origin_lost_colony",
-        "name": "Lost Colony",
-        "icon": "Origins_lost_colony",
-        "image": "origin_lost_colony",
-        "description": "lost colony",
-        "empire effects": [
-          "An advanced empire with the same species and random ethics will exis"
-        ]
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
       }
-      
-    ]
-  }
-  
+    },
+    {
+      "id": "origin_lost_colony",
+      "name": "Lost Colony",
+      "icon": "Origins_lost_colony.png",
+      "image": "origin_lost_colony.png",
+      "description": "",
+      "empireEffects": [
+        "An advanced empire with the same species and random ethics will exist in the galaxy",
+        "Homeworld of the advanced empire can be found via the Go To button in the species tab",
+        "If multiple empires have the origin and same species they will have the same parent empire",
+        "If species protrait is Human the advanced empire will use the Sol starting system",
+        "AI empires with this origin won't generate advanced empires if thos were turned off"
+      ],
+      "homeworldEffects": [
+        "Start with the Colonial Spirit homeworld modifier",
+        "Homeworld does not get the +30 Habitability bonus"
+      ],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "ethic_gestalt_consiousness",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "origin_remnants",
+      "name": "Remnants",
+      "icon": "Origins_remnant.png",
+      "image": "origin_remnants.png",
+      "description": "",
+      "empireEffects": [
+        "Start with the Archaeostudies t echnology researched",
+        "Guaranteed Habitable Worlds gain the Colonial Remains modifier when colonized"
+      ],
+      "homeworldEffects": [
+        "Homeworld is a size 22 Relic World",
+        "Start with a Faculity of Archaeostudies building",
+        "Start with 5 Ruined Arcology blockers",
+        "The Ruined Arcology blockers unlock random techs when cleared"
+      ],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "civic_agrarian_idyll",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "origin_mechanist",
+      "name": "Mechanist",
+      "icon": "Origin_mechanist.png",
+      "image": "origin_mechanist.png",
+      "description": "",
+      "empireEffects": [
+        "Start with the Powered Exoskeletons technology researched",
+        "Start with the Robotic Workers technology researched",
+        "Machine Template System technology starts as a permanent research option",
+        "+15% Mechanical Pop Assembly Speed",
+        "+1 Mechanical Species Trait Picks"
+      ],
+      "homeworldEffects": [
+        "Start with a Robot Assembly Plants building",
+        "Start with 8 robot Pops with a trait matching their starting job",
+        "Starting robots have the Bulky trait",
+        "Starting robots have the High Maintenance trait"
+      ],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "civic_permanent_employment",
+        "hasEthic": ["ethic_materialist", "ethic_fanatic_materialist"],
+        "excludesEthic": "ethic",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    },
+    {
+      "id": "",
+      "name": "",
+      "icon": "",
+      "description": "",
+      "empireEffects": [],
+      "homeworldEffects": [],
+      "requirements": {
+        "hasCivic": "",
+        "excludesCivic": "",
+        "hasEthic": "",
+        "excludesEthic": "",
+        "hasAuthority": "",
+        "excludesAuthority": ""
+      }
+    }
+  ]
+}
