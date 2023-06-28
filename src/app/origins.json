@@ -128,7 +128,7 @@
       "id": "origin_syncretic_evolution",
       "name": "Syncretic Evolution",
       "icon": "Origin_syncretic_evolution.png",
-      "image":"origin_syncretic_evolution.png",
+      "image": "origin_syncretic_evolution.png",
       "description": "",
       "empireEffects": ["Can create a second species with the Serviles trait"],
       "homeworldEffects": ["Start with 12 Pops of the second species"],
@@ -145,10 +145,20 @@
       "id": "origin_tree_of_life",
       "name": "Tree of Life",
       "icon": "Origin_tree_of_life.png",
-      "image":"origin_tree_of_life.png",
+      "image": "origin_tree_of_life.png",
       "description": "",
-      "empireEffects": ["Colonies start with a Tree of Life Sapling planetary feature", "Enables the Transplant Tree of Life decision", "Colony ships cost less Alloys but more Food", "Tree of Life planetary features are removed at 50 Devastation", "Worlds without a Tree of Life planetary feature have the following penalties: -50% Planet Build Speed; -25% Resources from Jobs; +10% Upkeep from Jobs; -5 Stability"],
-      "homeworldEffects": ["Start with a Tree of Life planetary feature", "Start with +1 built Agriculture district", "Start with -1 Mining district"],
+      "empireEffects": [
+        "Colonies start with a Tree of Life Sapling planetary feature",
+        "Enables the Transplant Tree of Life decision",
+        "Colony ships cost less Alloys but more Food",
+        "Tree of Life planetary features are removed at 50 Devastation",
+        "Worlds without a Tree of Life planetary feature have the following penalties: -50% Planet Build Speed; -25% Resources from Jobs; +10% Upkeep from Jobs; -5 Stability"
+      ],
+      "homeworldEffects": [
+        "Start with a Tree of Life planetary feature",
+        "Start with +1 built Agriculture district",
+        "Start with -1 Mining district"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": ["civic_devouring_swarm", "civic_terravore"],
@@ -162,10 +172,18 @@
       "id": "origin_resource_consolidation",
       "name": "Resource Consolidation",
       "icon": "Origin_resource_consolidation.png",
-      "image":"origin_resource_consolidation.png",
+      "image": "origin_resource_consolidation.png",
       "description": "",
-      "empireEffects": ["Capital star has a deposit of 10 Energy", "Other home system planets are broke or molten worlds with no resource deposits"],
-      "homeworldEffects": ["Homeworld is a Machine World with no blockers", "Start with a Consolidated Resources planetary feature", "Start with an Malfunctioning Replicator Bay blocker", "Start with an Organic Slurry planetary feature if Driven Assimilator"],
+      "empireEffects": [
+        "Capital star has a deposit of 10 Energy",
+        "Other home system planets are broke or molten worlds with no resource deposits"
+      ],
+      "homeworldEffects": [
+        "Homeworld is a Machine World with no blockers",
+        "Start with a Consolidated Resources planetary feature",
+        "Start with an Malfunctioning Replicator Bay blocker",
+        "Start with an Organic Slurry planetary feature if Driven Assimilator"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": ["civic_rogue_servitor", "civic_organic_reprocessing"],
@@ -179,10 +197,20 @@
       "id": "origin_clone_army",
       "name": "Clone Army",
       "icon": "Origin_clone_army.png",
-      "image":"origin_clone_army.png",
+      "image": "origin_clone_army.png",
       "description": "",
-      "empireEffects": ["Can construct up to 5 Ancient Clone Vat buildings", "Species has the Clone Soldier trait", "Admirals have the Clone Army Admiral trait", "Start with the Cloning technology researched", "Start with the Gene Banks technology researched"],
-      "homeworldEffects": ["Start with two Ancient Clone Vat buildings", "After 3-5 years the Homewrold Excavation archaeological site appears", "Excavating the arcaeological site starts the Genetic Crossroads event chain"],
+      "empireEffects": [
+        "Can construct up to 5 Ancient Clone Vat buildings",
+        "Species has the Clone Soldier trait",
+        "Admirals have the Clone Army Admiral trait",
+        "Start with the Cloning technology researched",
+        "Start with the Gene Banks technology researched"
+      ],
+      "homeworldEffects": [
+        "Start with two Ancient Clone Vat buildings",
+        "After 3-5 years the Homewrold Excavation archaeological site appears",
+        "Excavating the arcaeological site starts the Genetic Crossroads event chain"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "civic_permanent_employment",
@@ -199,10 +227,19 @@
       "image": "origin_life_seeded.png",
       "description": "",
       "empireEffects": ["Species has the Gaia World Preference"],
-      "homeworldEffects": ["Homeworld is a size 30 Gaia World", "Start with 1 Bubbling Swamp planetary feature", "Start with 1 Crystalline Caverns planetary feauture", "Start with 1 Dust Caverns planetary feature"],
+      "homeworldEffects": [
+        "Homeworld is a size 30 Gaia World",
+        "Start with 1 Bubbling Swamp planetary feature",
+        "Start with 1 Crystalline Caverns planetary feauture",
+        "Start with 1 Dust Caverns planetary feature"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_mutagenic_spas", "civic_permutation_pools", "civic_relentless_industrialists"],
+        "excludesCivic": [
+          "civic_mutagenic_spas",
+          "civic_permutation_pools",
+          "civic_relentless_industrialists"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "",
@@ -213,13 +250,17 @@
       "id": "origin_post_apocalyptic",
       "name": "Post-Apocalyptic",
       "icon": "Origin_post_apocalyptic.png",
-      "image":"origin_post_apocalyptic.png",
+      "image": "origin_post_apocalyptic.png",
       "description": "",
       "empireEffects": ["Species has the Survivor trait"],
       "homeworldEffects": ["Homeworld is a Tomb World"],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_agrarian_idyll", "civic_anglers", "civic_trawling_operations"],
+        "excludesCivic": [
+          "civic_agrarian_idyll",
+          "civic_anglers",
+          "civic_trawling_operations"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "auth_machine_intelligence",
@@ -230,14 +271,24 @@
       "id": "origin_calamitous_birth",
       "name": "Calamitous Birth",
       "icon": "Origin_lithoid.png",
-      "image":"origin_calamitous.png",
+      "image": "origin_calamitous.png",
       "description": "",
-      "empireEffects": ["Can build Meteorite Colony Ships", "Can construct Experimental Crater holdings"],
-      "homeworldEffects": ["Start with a Massive Crater planetary feature", "Start with a Lithoid Crater homeworld modifier"],
+      "empireEffects": [
+        "Can build Meteorite Colony Ships",
+        "Can construct Experimental Crater holdings"
+      ],
+      "homeworldEffects": [
+        "Start with a Massive Crater planetary feature",
+        "Start with a Lithoid Crater homeworld modifier"
+      ],
       "requirements": {
-        "hasTrait":"trait_lithoid",
+        "hasTrait": "trait_lithoid",
         "hasCivic": "",
-        "excludesCivic": ["civic_catalytic_processing", "civic_catalytic_recyclers", "civic_organic_reprocessing"],
+        "excludesCivic": [
+          "civic_catalytic_processing",
+          "civic_catalytic_recyclers",
+          "civic_organic_reprocessing"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "",
@@ -248,13 +299,27 @@
       "id": "origin_common_ground",
       "name": "Common Ground",
       "icon": "Origin_common_ground.png",
-      "image":"origin_common_ground.png",
+      "image": "origin_common_ground.png",
       "description": "",
-      "empireEffects": ["Start with Diplomacy tradition tree adopted", "Start with the Federation tradtition", "Start as the president of a Federation with two other members", "The two members will be Xenophile and share at least one ethic with the president", "There will be no Guaranteed Habitable Worlds regardless of game settings", "+100 Permanent Opinion to and from Federation members", "+50 Trust to and from Federation members", "On day 2 choose the federation type", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
+      "empireEffects": [
+        "Start with Diplomacy tradition tree adopted",
+        "Start with the Federation tradtition",
+        "Start as the president of a Federation with two other members",
+        "The two members will be Xenophile and share at least one ethic with the president",
+        "There will be no Guaranteed Habitable Worlds regardless of game settings",
+        "+100 Permanent Opinion to and from Federation members",
+        "+50 Trust to and from Federation members",
+        "On day 2 choose the federation type",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_inwards_perfection", "civic_fanatic_purifiers", "civic_barbaric_despoilers"],
+        "excludesCivic": [
+          "civic_inwards_perfection",
+          "civic_fanatic_purifiers",
+          "civic_barbaric_despoilers"
+        ],
         "hasEthic": "",
         "excludesEthic": ["ethic_xenophobe", "ethic_fanatic_xenohpobe"],
         "hasAuthority": "",
@@ -265,15 +330,30 @@
       "id": "origin_hegemon",
       "name": "Hegemon",
       "icon": "Origin_hegemon.png",
-      "image":"origin_hegemon.png",
+      "image": "origin_hegemon.png",
       "description": "",
-      "empireEffects": ["Start with Diplomacy tradition tree adopted", "Start as the president of a Hegemony Federation with two other members", "The two members will be Xenophile and share at least one ethic with the president", "There will be no Guaranteed Habitable Worlds regardless of game settings", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
+      "empireEffects": [
+        "Start with Diplomacy tradition tree adopted",
+        "Start as the president of a Hegemony Federation with two other members",
+        "The two members will be Xenophile and share at least one ethic with the president",
+        "There will be no Guaranteed Habitable Worlds regardless of game settings",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_inwards_perfection", "civic_fanatic_purifiers", "civic_barbaric_despoilers"],
+        "excludesCivic": [
+          "civic_inwards_perfection",
+          "civic_fanatic_purifiers",
+          "civic_barbaric_despoilers"
+        ],
         "hasEthic": "",
-        "excludesEthic": ["ethic_xenophobe", "ethic_fanatic_xenohpobe", "ethic_egalitarian", "ethic_fanatic_egalitarian"],
+        "excludesEthic": [
+          "ethic_xenophobe",
+          "ethic_fanatic_xenohpobe",
+          "ethic_egalitarian",
+          "ethic_fanatic_egalitarian"
+        ],
         "hasAuthority": "",
         "excludesAuthority": ""
       }
@@ -282,10 +362,21 @@
       "id": "origim_doomsday",
       "name": "Doomsday",
       "icon": "Origin_doomsday.png",
-      "image":"origin_doomsday.png",
+      "image": "origin_doomsday.png",
       "description": "",
-      "empireEffects": ["A warning is given a year before the homeworld explodes", "No guaranteed habitable planets will spawn near the home system", "Pops can be resettled from the homeworld regardless of ethics", "Enables the Evacuation Protocols edict", "+30% Happiness for 5 years after the first colony if not Gestalt Conciousness", "+30% Stability for 5 years after the first colony if Gestalt Consiousness"],
-      "homeworldEffects": ["Homeworld will become a Shattered World in 35 to 48 years", "Start with 10 Devastation", "Start with the Doomsday homewrold modifier which worsens every decade"],
+      "empireEffects": [
+        "A warning is given a year before the homeworld explodes",
+        "No guaranteed habitable planets will spawn near the home system",
+        "Pops can be resettled from the homeworld regardless of ethics",
+        "Enables the Evacuation Protocols edict",
+        "+30% Happiness for 5 years after the first colony if not Gestalt Conciousness",
+        "+30% Stability for 5 years after the first colony if Gestalt Consiousness"
+      ],
+      "homeworldEffects": [
+        "Homeworld will become a Shattered World in 35 to 48 years",
+        "Start with 10 Devastation",
+        "Start with the Doomsday homewrold modifier which worsens every decade"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "",
@@ -299,9 +390,14 @@
       "id": "origin_on_the_shoulders_of_giants",
       "name": "On the Shoulders of Giants",
       "icon": "Origin_on_the_shoulders_of_giants.png",
-      "image":"origin_shoulders.png",
+      "image": "origin_shoulders.png",
       "description": "",
-      "empireEffects": ["A random home system planet has the Ex Gravitas archaeological site", "Can get the On the SHoulders of Giants mid-game event chaing", "Cannot discover precusor anomalies or sites beofe completing their story", "3 times more likely to discover precursor anomalies or sites after completing their story"],
+      "empireEffects": [
+        "A random home system planet has the Ex Gravitas archaeological site",
+        "Can get the On the SHoulders of Giants mid-game event chaing",
+        "Cannot discover precusor anomalies or sites beofe completing their story",
+        "3 times more likely to discover precursor anomalies or sites after completing their story"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
@@ -316,15 +412,26 @@
       "id": "origin_scion",
       "name": "Scion",
       "icon": "Origin_scion.png",
-      "image":"origin_scion.png",
+      "image": "origin_scion.png",
       "description": "",
-      "empireEffects": ["Start as a Scion of a Fanatic Materialist of Fanatic Spiritualist Fallen Empire", "+100 Opinion to and from the Overlord", "+Start with a Wormhole leading to the Overlord's capital system", "Gain a more powerful gift every few decades", "Creates a 1-system Fallen Empire if the game was started with none", "Gain a temporary Fallen Empire fleet every 20 years if losing a war against a Superior empire", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
+      "empireEffects": [
+        "Start as a Scion of a Fanatic Materialist of Fanatic Spiritualist Fallen Empire",
+        "+100 Opinion to and from the Overlord",
+        "+Start with a Wormhole leading to the Overlord's capital system",
+        "Gain a more powerful gift every few decades",
+        "Creates a 1-system Fallen Empire if the game was started with none",
+        "Gain a temporary Fallen Empire fleet every 20 years if losing a war against a Superior empire",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "civic_pompous_purists",
         "hasEthic": "",
-        "excludesEthic": ["ethic_fanatic_xenophobe", "ethic_gestalt_consciousness"],
+        "excludesEthic": [
+          "ethic_fanatic_xenophobe",
+          "ethic_gestalt_consciousness"
+        ],
         "hasAuthority": "",
         "excludesAuthority": ""
       }
@@ -334,11 +441,27 @@
       "name": "Shattered Ring",
       "icon": "Origin_shattered_ring.png",
       "description": "",
-      "empireEffects": ["Species has Ring World Preference", "Can repair two other sections of the home system", "Start with an irreparable section with a deposit of 5 Engineering Research", "Start with a Shattered World with a deposit of 10 Minerals", "Capital star has a deposit of 10 Energy", "Shattered Ring World segments in home system will replace guaranteed habitable worlds", "Cannot change the starting system"],
-      "homeworldEffects": ["Homeworld is a Shattered Ring World", "Start with 3 Decrepit Tunnels blockers", "Start with 4 Ancient Rubble blockers"],
+      "empireEffects": [
+        "Species has Ring World Preference",
+        "Can repair two other sections of the home system",
+        "Start with an irreparable section with a deposit of 5 Engineering Research",
+        "Start with a Shattered World with a deposit of 10 Minerals",
+        "Capital star has a deposit of 10 Energy",
+        "Shattered Ring World segments in home system will replace guaranteed habitable worlds",
+        "Cannot change the starting system"
+      ],
+      "homeworldEffects": [
+        "Homeworld is a Shattered Ring World",
+        "Start with 3 Decrepit Tunnels blockers",
+        "Start with 4 Ancient Rubble blockers"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_agrarian_idyll", "civic_anglers", "civic_trawling_operations"],
+        "excludesCivic": [
+          "civic_agrarian_idyll",
+          "civic_anglers",
+          "civic_trawling_operations"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "",
@@ -351,11 +474,32 @@
       "icon": "Origin_void_dwellers.png",
       "image": "origin_void_dwellers.png",
       "description": "",
-      "empireEffects": ["Species has Habitat Preference ", "Species has the Void Dweller trait", "Start with the Orbital Habitats technology researched", "Habitat Expansion technology starts unlocked and can be researched", "Start with the Hydroponics Farming technology researched if not Lithoid", "Start with the Zero-G Refineries technology researched if Lithoid", "Hydroponic farms have +1 Farmer Jobs", "Cannot change the starting system except for a special version of Sol", "1% chance to spawn the Crystalline Empire enclave during mid-game (player only)", "Several Tradition trees have alternative bonuses to improve Habitats"],
-      "homeworldEffects": ["Start on a size 6 habitat built over a Research deposit", "Start on a size 4 habitat built over a Mining deposit", "Start on a size 4 habitat built over an Energy deposit", "Start with an Arcane Replicator planetary feature on the capital habitat"],
+      "empireEffects": [
+        "Species has Habitat Preference ",
+        "Species has the Void Dweller trait",
+        "Start with the Orbital Habitats technology researched",
+        "Habitat Expansion technology starts unlocked and can be researched",
+        "Start with the Hydroponics Farming technology researched if not Lithoid",
+        "Start with the Zero-G Refineries technology researched if Lithoid",
+        "Hydroponic farms have +1 Farmer Jobs",
+        "Cannot change the starting system except for a special version of Sol",
+        "1% chance to spawn the Crystalline Empire enclave during mid-game (player only)",
+        "Several Tradition trees have alternative bonuses to improve Habitats"
+      ],
+      "homeworldEffects": [
+        "Start on a size 6 habitat built over a Research deposit",
+        "Start on a size 4 habitat built over a Mining deposit",
+        "Start on a size 4 habitat built over an Energy deposit",
+        "Start with an Arcane Replicator planetary feature on the capital habitat"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_idyllic_bloom", "civic_agrarian_idyll", "civic_anglers", "civic_trawling_operations"],
+        "excludesCivic": [
+          "civic_idyllic_bloom",
+          "civic_agrarian_idyll",
+          "civic_anglers",
+          "civic_trawling_operations"
+        ],
         "hasEthic": "",
         "excludesEthic": "ethic_gestalt_consciousness",
         "hasAuthority": "",
@@ -368,13 +512,34 @@
       "icon": "Origin_necrophage.png",
       "image": "origin_necrophage.png",
       "description": "",
-      "empireEffects": ["Species has the Necrophage trait", "Only Necrophage Pops can be Leaders or take Ruler jobs", "Can construct Chamber of Elevation buildings", "Can use the Necrophage purge type", "Can Create a second species", "Centralized Command technology starts unlockek and can be researched", "With Glandular Acclimation converting Pops changes habitability to their current planet's", "Guaranteed Habitable Worlds contain pre-FTL civilizations advanced up to Iron Age"],
-      "homeworldEffects": ["Start with 12 Pops of the prepatent species", "Start with a Chamber of Elevation building if not Genocidal"],
+      "empireEffects": [
+        "Species has the Necrophage trait",
+        "Only Necrophage Pops can be Leaders or take Ruler jobs",
+        "Can construct Chamber of Elevation buildings",
+        "Can use the Necrophage purge type",
+        "Can Create a second species",
+        "Centralized Command technology starts unlockek and can be researched",
+        "With Glandular Acclimation converting Pops changes habitability to their current planet's",
+        "Guaranteed Habitable Worlds contain pre-FTL civilizations advanced up to Iron Age"
+      ],
+      "homeworldEffects": [
+        "Start with 12 Pops of the prepatent species",
+        "Start with a Chamber of Elevation building if not Genocidal"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_death_cult", "civic_corporate_death_cult", "civic_empath", "civic_permanent_employment"],
+        "excludesCivic": [
+          "civic_death_cult",
+          "civic_corporate_death_cult",
+          "civic_empath",
+          "civic_permanent_employment"
+        ],
         "hasEthic": "",
-        "excludesEthic": ["ethic_xenophile", "ethic_fanatic_xenophile", "ethic_fanatic_egalitarian"],
+        "excludesEthic": [
+          "ethic_xenophile",
+          "ethic_fanatic_xenophile",
+          "ethic_fanatic_egalitarian"
+        ],
         "hasAuthority": "",
         "excludesAuthority": ""
       }
@@ -386,10 +551,18 @@
       "image": "origin_here_be_dragons.png",
       "description": "",
       "empireEffects": ["origin_here_be_dragons.png"],
-      "homeworldEffects": ["Start with an allied Sky Dragon guardian", "Killing the guardian grants a permanent empire modifier", "A system 2 herlanes away will contain a Living Metal deposit"],
+      "homeworldEffects": [
+        "Start with an allied Sky Dragon guardian",
+        "Killing the guardian grants a permanent empire modifier",
+        "A system 2 herlanes away will contain a Living Metal deposit"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_fanatic_purifiers", "civic_devouring_swarm", "civic_determined_exterminators"],
+        "excludesCivic": [
+          "civic_fanatic_purifiers",
+          "civic_devouring_swarm",
+          "civic_determined_exterminators"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "",
@@ -400,10 +573,23 @@
       "id": "origin_ocean_paradise",
       "name": "Ocean Paradise",
       "icon": "Origin_ocean_paradise.png",
-      "image":"origin_ocean_paradise.png",
+      "image": "origin_ocean_paradise.png",
       "description": "",
-      "empireEffects": ["Species has the Aquatic trait", "Start inside a nebula", "Start with 4 Frozen worlds and 10 Ice Asteroids", "Guaranteed habitable worlds are Frozen worlds", "Cannot change  the starting sytem"],
-      "homeworldEffects": ["Homeworld is a seize 30 Ocean World", "Start with the Ocean Paradise homeworld modifier", "Start with a Crystal Reef palentary feature", "Start with 3 Submerged Ore Veins planetary features", "Start wih 3 Underwater Vents planetary features", "Start with 8 Teeming Reef planetary features"],
+      "empireEffects": [
+        "Species has the Aquatic trait",
+        "Start inside a nebula",
+        "Start with 4 Frozen worlds and 10 Ice Asteroids",
+        "Guaranteed habitable worlds are Frozen worlds",
+        "Cannot change  the starting sytem"
+      ],
+      "homeworldEffects": [
+        "Homeworld is a seize 30 Ocean World",
+        "Start with the Ocean Paradise homeworld modifier",
+        "Start with a Crystal Reef palentary feature",
+        "Start with 3 Submerged Ore Veins planetary features",
+        "Start wih 3 Underwater Vents planetary features",
+        "Start with 8 Teeming Reef planetary features"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "",
@@ -419,11 +605,29 @@
       "icon": "Origin_imperial_fiefdom.png",
       "image": "origin_imperial_fiefdom.png",
       "description": "",
-      "empireEffects": ["Start as a subject of an empire with the Imperial Liege origin", "1-4 vassals will border the overlord (depending on the galaxy size)", "If multiple empires have the origin they will have the same overlord", "Overlord will construct an Overlord Garrison holding on all subject capitals", "+120 Decaying Opinion with the Overlord", "After 40-65 years become independed or gain 100 influence", "After 40-65 years the advanced empire will break into 3 empirers at war with each other", "After 40-65 years all the vassals become idependent", "After 40-65 years can become the overlord of previous vassals with inferior relative power", "On day 2 choose to become a specialized subject: Bulwark grants 5 destroyers and the technology to build more; Prospectorium grants 2 contruction ships; Scholarium grants a science ship and a level 3 scientist", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
+      "empireEffects": [
+        "Start as a subject of an empire with the Imperial Liege origin",
+        "1-4 vassals will border the overlord (depending on the galaxy size)",
+        "If multiple empires have the origin they will have the same overlord",
+        "Overlord will construct an Overlord Garrison holding on all subject capitals",
+        "+120 Decaying Opinion with the Overlord",
+        "After 40-65 years become independed or gain 100 influence",
+        "After 40-65 years the advanced empire will break into 3 empirers at war with each other",
+        "After 40-65 years all the vassals become idependent",
+        "After 40-65 years can become the overlord of previous vassals with inferior relative power",
+        "On day 2 choose to become a specialized subject: Bulwark grants 5 destroyers and the technology to build more; Prospectorium grants 2 contruction ships; Scholarium grants a science ship and a level 3 scientist",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_inwards_perfection", "civic_driven_assimilator", "civic_devouring_swarm", "civic_fanatic_purifiers", "civic_determined_exterminators"],
+        "excludesCivic": [
+          "civic_inwards_perfection",
+          "civic_driven_assimilator",
+          "civic_devouring_swarm",
+          "civic_fanatic_purifiers",
+          "civic_determined_exterminators"
+        ],
         "hasEthic": "",
         "excludesEthic": "",
         "hasAuthority": "",
@@ -434,10 +638,25 @@
       "id": "origin_progenitor_hive",
       "name": "Progenitor Hive",
       "icon": "Origin_progenitor_hive.png",
-      "image":"origin_progenitor_hive.png",
+      "image": "origin_progenitor_hive.png",
       "description": "",
-      "empireEffects": ["Leaders gain experience each month", "Can construct Offspring Nest holdings", "Can construct Offspirng Nest buildings", "Cannot contruct Spawning Pools buildings", "-50% Menial Drone Output on worlds without an Offspring Drone", "Can release sectors as subjects unless Devouring Swarm", "Can contruct offspring Outlook starbase buildings", "Can design and build Offspring ships", "Starting fleet has an Offspring Corvette", "Fleets without an Offspring Ship have the following penalties: -50% Accuaracy; -50% Evasion; -50% Ship Fire Rate; -50% Sublight Speed"],
-      "homeworldEffects": ["Start with an offspring Nest building", "Start with a Progenitor Nest planetary features", "If the planet is invaded or destroyed gain the following penalties: -10% Menial Drone Output; -30% Sublight Speed; -10 Stability; Enables the Grow a New Progenitor decision"],
+      "empireEffects": [
+        "Leaders gain experience each month",
+        "Can construct Offspring Nest holdings",
+        "Can construct Offspirng Nest buildings",
+        "Cannot contruct Spawning Pools buildings",
+        "-50% Menial Drone Output on worlds without an Offspring Drone",
+        "Can release sectors as subjects unless Devouring Swarm",
+        "Can contruct offspring Outlook starbase buildings",
+        "Can design and build Offspring ships",
+        "Starting fleet has an Offspring Corvette",
+        "Fleets without an Offspring Ship have the following penalties: -50% Accuaracy; -50% Evasion; -50% Ship Fire Rate; -50% Sublight Speed"
+      ],
+      "homeworldEffects": [
+        "Start with an offspring Nest building",
+        "Start with a Progenitor Nest planetary features",
+        "If the planet is invaded or destroyed gain the following penalties: -10% Menial Drone Output; -30% Sublight Speed; -10 Stability; Enables the Grow a New Progenitor decision"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "",
@@ -451,9 +670,18 @@
       "id": "origin_slingshot_to_the_stars",
       "name": "Slingshot to the stars",
       "icon": "Origin_slingshot_to_the_stars.png",
-      "image":"origin_slingshot_to_the_stars.png",
+      "image": "origin_slingshot_to_the_stars.png",
       "description": "",
-      "empireEffects": ["-75% Starbase influence Distance Cost", "+50% Quantum Catapult Accuracy", "Catapulted fleets fire rate bonus is increased to +50%", "Start with a Ruined Quantum Catapult megastructure in a neighbour system", "Start with the Quantum Catapult archaeological site in the neighbor system", "Can repair the ruined megastructure without MEga-Engineering", "Building a starbase in the neighbor system grants 150 influence", "If the megastructure is repaired it unlocks the Quantum Catapult technology"],
+      "empireEffects": [
+        "-75% Starbase influence Distance Cost",
+        "+50% Quantum Catapult Accuracy",
+        "Catapulted fleets fire rate bonus is increased to +50%",
+        "Start with a Ruined Quantum Catapult megastructure in a neighbour system",
+        "Start with the Quantum Catapult archaeological site in the neighbor system",
+        "Can repair the ruined megastructure without MEga-Engineering",
+        "Building a starbase in the neighbor system grants 150 influence",
+        "If the megastructure is repaired it unlocks the Quantum Catapult technology"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
@@ -468,9 +696,18 @@
       "id": "origin_subterranean",
       "name": "Subterranean",
       "icon": "Origin_subterranean.png",
-      "image":"origin_subterranean.png",
+      "image": "origin_subterranean.png",
       "description": "",
-      "empireEffects": ["Species has the Cave Dweller trait", "Mining Districts are uncapped", "+2 Housing per Mining District", "1 Building Slot per 3 Mining District", "-75% Orbital Bombardment Damage", "+10% Building and District Cost and Upkeep", "-10% Planetary Build Speed", "Uses a unique city appearance outside habitable megastructures"],
+      "empireEffects": [
+        "Species has the Cave Dweller trait",
+        "Mining Districts are uncapped",
+        "+2 Housing per Mining District",
+        "1 Building Slot per 3 Mining District",
+        "-75% Orbital Bombardment Damage",
+        "+10% Building and District Cost and Upkeep",
+        "-10% Planetary Build Speed",
+        "Uses a unique city appearance outside habitable megastructures"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
@@ -485,14 +722,23 @@
       "id": "origin_teachers_of_the_shroud",
       "name": "Teachers of the Shroud",
       "icon": "Origin_teachers_of_the_shroud.png",
-      "image":"origin_teachers_of_the_shroud.png",
+      "image": "origin_teachers_of_the_shroud.png",
       "description": "",
-      "empireEffects": ["Species has the Latent psionic trait", "Start in contact with the Shroud-Touched Coven enclave", "Can construct a Shroud Beacon starbase building", "Start with 25 Rare Crystals", "Can construct Psi Corps buildings", "Psionic Theory technology starts as a permanent research option", "Nearby planets may be Shrouded Worlds", "Cannot pick ascension path perks"],
+      "empireEffects": [
+        "Species has the Latent psionic trait",
+        "Start in contact with the Shroud-Touched Coven enclave",
+        "Can construct a Shroud Beacon starbase building",
+        "Start with 25 Rare Crystals",
+        "Can construct Psi Corps buildings",
+        "Psionic Theory technology starts as a permanent research option",
+        "Nearby planets may be Shrouded Worlds",
+        "Cannot pick ascension path perks"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": ["civic_fanatic_purifiers"],
-        "hasEthic":["ethic_spiritualist", "ethic_fanatic_spiritualist"],
+        "hasEthic": ["ethic_spiritualist", "ethic_fanatic_spiritualist"],
         "excludesEthic": "",
         "hasAuthority": "",
         "excludesAuthority": ""
@@ -502,10 +748,24 @@
       "id": "origin_knights_of_the_toxic_god",
       "name": "Knights of the Toxic God",
       "icon": "Origin_knights_of_the_toxic_god.png",
-      "image":"origin_knights_of_the_toxic_god.png",
+      "image": "origin_knights_of_the_toxic_god.png",
       "description": "",
-      "empireEffects": ["Enables the Knightly Duties policy", "Can construct Order's Commandery holdings", "Start with the Quest for the Toxic God situation", "Cannot change the starting system except for a special version of Sol", "Can remove the origin effects for a reward if the situation isn't compelted in 100 years"],
-      "homeworldEffects": ["Start with an A Blight Upon the Land planetary feature", "Start with an Envenomed Seas planetary feature", "Start with a Pestilential Wasteland planetary feature", "Start with a Pools Most Venomous planetary feature", "Start with a Swarms of the Deity planetary feature", "Start with a colonized size 6 habitat orbiting the homeworld", "Habitat starts with the Order's Keep building"],
+      "empireEffects": [
+        "Enables the Knightly Duties policy",
+        "Can construct Order's Commandery holdings",
+        "Start with the Quest for the Toxic God situation",
+        "Cannot change the starting system except for a special version of Sol",
+        "Can remove the origin effects for a reward if the situation isn't compelted in 100 years"
+      ],
+      "homeworldEffects": [
+        "Start with an A Blight Upon the Land planetary feature",
+        "Start with an Envenomed Seas planetary feature",
+        "Start with a Pestilential Wasteland planetary feature",
+        "Start with a Pools Most Venomous planetary feature",
+        "Start with a Swarms of the Deity planetary feature",
+        "Start with a colonized size 6 habitat orbiting the homeworld",
+        "Habitat starts with the Order's Keep building"
+      ],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": ["civic_fanatic_purifiers"],
@@ -521,7 +781,11 @@
       "icon": "Origin_overtuned.png",
       "image": "origin_overtuned.png",
       "description": "",
-      "empireEffects": ["Allows the selection of overtuned traits", "Enables the Damn the Consequences edict", "Start with the Gene Tailoring technology researched"],
+      "empireEffects": [
+        "Allows the selection of overtuned traits",
+        "Enables the Damn the Consequences edict",
+        "Start with the Gene Tailoring technology researched"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
@@ -538,13 +802,68 @@
       "icon": "Origin_broken_shackles.png",
       "image": "origin_broken_shackles.png",
       "description": "",
-      "empireEffects": ["An empire with the Payback origin will be present", "The Minamar Specialized Industries unique empire will be present", "Scientific Method technology is not researched but available as a permanent option", "Planetary Government technology is not researched but available as a permanent option", "Corvettes technology is not researched but available as a permanent option", "A pre-FTL civilization will exist for each starting species", "Can only select randomized starting systems", "+1 Available Envoys", "+20% Inflitration Speed", "+20% First Contact Discovery Speed", "+50 Opinion to and from Payback empires", "+100 Opinion with homeworld pre-FTL civilizations", "Cannot set Slavery policy to Allowed", "Cannot set Purce policy to Allowed", "Factions form after 1 year", "+50% Faction Unity Gain for 10 years after the first year", "Gain a moderate amount of Research (min 350) if a leading scientist is alien", "Unlock the next research building technology if a leading scientis is alien", "Gain a small amout of Unity (min 100) after cpmstructing the first Outpost", "Gain a bonus for 5 years whenever a starting species' homeworld is surveyed", "One year after surveying a starting species' homeworld the Homesick event chain will start", "Can get The Cost of Freedom mid-game event chain", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
-      "homeworldEffects": ["Start without any ships and stations", "Start with pops from 3-22 pre-FTL species", "Start with the Crashed Slaver Ship archaeological site", "Start with 6 Scavenger Site districts that cannot be demolished", "Start with an Adminsitrative Hub building", "Start with a Laboratory Complex building", "Start with a Makeshift Farms building", "Start with a Makeshift Farms building", "Start with a Power Plant building", "Start with a Scrap Refinery building", "Start with a Crashed Slaver Ship planetary feautre", "Start with 5 Ship Debris blockers", "Homeworld does not get the +30 Habitability bonus", "Starts with the Stellar Culture Shock of invaded Early Space Age primitives", "+20% Citizen Pop Happiness for 20 years", "-50% Pop Amenitites Usage for 20 years", "+100% Unity from Jobs for 20 years", "-25% Pop Housing Usage for 20 years", "-50% Pop Consumer Goods Upkeep for 20 years", "+50% Egalitarian Ethics Attraction for 20 years"],
+      "empireEffects": [
+        "An empire with the Payback origin will be present",
+        "The Minamar Specialized Industries unique empire will be present",
+        "Scientific Method technology is not researched but available as a permanent option",
+        "Planetary Government technology is not researched but available as a permanent option",
+        "Corvettes technology is not researched but available as a permanent option",
+        "A pre-FTL civilization will exist for each starting species",
+        "Can only select randomized starting systems",
+        "+1 Available Envoys",
+        "+20% Inflitration Speed",
+        "+20% First Contact Discovery Speed",
+        "+50 Opinion to and from Payback empires",
+        "+100 Opinion with homeworld pre-FTL civilizations",
+        "Cannot set Slavery policy to Allowed",
+        "Cannot set Purce policy to Allowed",
+        "Factions form after 1 year",
+        "+50% Faction Unity Gain for 10 years after the first year",
+        "Gain a moderate amount of Research (min 350) if a leading scientist is alien",
+        "Unlock the next research building technology if a leading scientis is alien",
+        "Gain a small amout of Unity (min 100) after cpmstructing the first Outpost",
+        "Gain a bonus for 5 years whenever a starting species' homeworld is surveyed",
+        "One year after surveying a starting species' homeworld the Homesick event chain will start",
+        "Can get The Cost of Freedom mid-game event chain",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
+      "homeworldEffects": [
+        "Start without any ships and stations",
+        "Start with pops from 3-22 pre-FTL species",
+        "Start with the Crashed Slaver Ship archaeological site",
+        "Start with 6 Scavenger Site districts that cannot be demolished",
+        "Start with an Adminsitrative Hub building",
+        "Start with a Laboratory Complex building",
+        "Start with a Makeshift Farms building",
+        "Start with a Makeshift Farms building",
+        "Start with a Power Plant building",
+        "Start with a Scrap Refinery building",
+        "Start with a Crashed Slaver Ship planetary feautre",
+        "Start with 5 Ship Debris blockers",
+        "Homeworld does not get the +30 Habitability bonus",
+        "Starts with the Stellar Culture Shock of invaded Early Space Age primitives",
+        "+20% Citizen Pop Happiness for 20 years",
+        "-50% Pop Amenitites Usage for 20 years",
+        "+100% Unity from Jobs for 20 years",
+        "-25% Pop Housing Usage for 20 years",
+        "-50% Pop Consumer Goods Upkeep for 20 years",
+        "+50% Egalitarian Ethics Attraction for 20 years"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_eager_explorers", "civic_privatized_exploration", "civic_pharma_state"],
+        "excludesCivic": [
+          "civic_eager_explorers",
+          "civic_privatized_exploration",
+          "civic_pharma_state"
+        ],
         "hasEthic": "",
-        "excludesEthic": ["ethic_authoritarian", "ethic_fanatic_authoritarian", "ethic_xenophobe", "ethic_fanatic_xenophobe", "ethic_gestalt_consciousness"],
+        "excludesEthic": [
+          "ethic_authoritarian",
+          "ethic_fanatic_authoritarian",
+          "ethic_xenophobe",
+          "ethic_fanatic_xenophobe",
+          "ethic_gestalt_consciousness"
+        ],
         "hasAuthority": "",
         "excludesAuthority": ""
       }
@@ -555,11 +874,47 @@
       "icon": "Origin_payback.png",
       "image": "origin_payback.png",
       "description": "",
-      "empireEffects": ["An empire with the Broken Shackles origin will be present", "The Minamar Specialized Industries unique empire will be present", "Scientific Method technology is not researched but available as a permanent option", "Planetary Government technology is not researched but available as a permanent option", "Corvettes technology is not researched but available as a permanent option", "+15% Damage to empires with Superior or Overwhelming relative power", "+50% Opinion to and from Broken Shackles empires", "Pre-FTL civilization will exist regardless of game settings", "In 6 months gain a special project to remove the Debris Field homeworld modifier", "Cannot set First Contact Protocol policy to Proactive", "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."],
-      "homeworldEffects": ["Start without any ships and stations", "Start with a Gene Clinics building", "Start with 10 fewer pops", "Start with 33% Devastation", "Start with 6 ship Debris blockers", "The Ship Debris blockers unlock random techs or resources when cleared", "The Ship Debris blockers grant unity when cleared", "Start with a Debris Field homeworld modifier", "Removing the modifier uncovers the Aftermath of battle site", "+15% Happiness for 20 years", "+25% Amenities for 20 years", "+10% Resources from Jobs for 20 years", "+2 Unification Officer Jobs for 20 years", "50% each decade the Gene Clinics building becomes more ruined"],
+      "empireEffects": [
+        "An empire with the Broken Shackles origin will be present",
+        "The Minamar Specialized Industries unique empire will be present",
+        "Scientific Method technology is not researched but available as a permanent option",
+        "Planetary Government technology is not researched but available as a permanent option",
+        "Corvettes technology is not researched but available as a permanent option",
+        "+15% Damage to empires with Superior or Overwhelming relative power",
+        "+50% Opinion to and from Broken Shackles empires",
+        "Pre-FTL civilization will exist regardless of game settings",
+        "In 6 months gain a special project to remove the Debris Field homeworld modifier",
+        "Cannot set First Contact Protocol policy to Proactive",
+        "Xeno-Linguistics technology staets as a permanent research option if Galactic Paragons DLC is installed."
+      ],
+      "homeworldEffects": [
+        "Start without any ships and stations",
+        "Start with a Gene Clinics building",
+        "Start with 10 fewer pops",
+        "Start with 33% Devastation",
+        "Start with 6 ship Debris blockers",
+        "The Ship Debris blockers unlock random techs or resources when cleared",
+        "The Ship Debris blockers grant unity when cleared",
+        "Start with a Debris Field homeworld modifier",
+        "Removing the modifier uncovers the Aftermath of battle site",
+        "+15% Happiness for 20 years",
+        "+25% Amenities for 20 years",
+        "+10% Resources from Jobs for 20 years",
+        "+2 Unification Officer Jobs for 20 years",
+        "50% each decade the Gene Clinics building becomes more ruined"
+      ],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": ["civic_slaver_guilds", "civic_fanatic_purifiers", "civic_pompous_purists", "civic_eager_explorers", "civic_oppressive_autocracy", "civic_identured_assets", "civic_privatized_exploration", "civic_pharma_state"],
+        "excludesCivic": [
+          "civic_slaver_guilds",
+          "civic_fanatic_purifiers",
+          "civic_pompous_purists",
+          "civic_eager_explorers",
+          "civic_oppressive_autocracy",
+          "civic_identured_assets",
+          "civic_privatized_exploration",
+          "civic_pharma_state"
+        ],
         "hasEthic": "",
         "excludesEthic": "ethic_gestalt_consciousness",
         "hasAuthority": "",
@@ -570,32 +925,65 @@
       "id": "origin_fear_of_the_dark",
       "name": "Fear of the Dark",
       "icon": "Origin_fear_of_the_dark.png",
-      "image":"origin_fear_of_the_dark.png",
+      "image": "origin_fear_of_the_dark.png",
       "description": "",
-      "empireEffects": [""],
-      "homeworldEffects": [],
+      "empireEffects": [
+        "Start with a pre-FTL civilization of the same species in the home system",
+        "Cannot change the starting system except for a special version of Sol",
+        "+10% Anomaly Discovery Chance",
+        "+20% Anomaly Research Speed",
+        "-1 Research Alternatives",
+        "Leader Pool Size",
+        "2% chance to gain a scientist with the Cunnig trait for 4-6 years each year",
+        "2% chance to gain an admiral with the Cunnig trait for 4-6 years each year",
+        "4% chance to be offered to pay for +10% Trade Value for 10 years each year",
+        "4% chance to be offered a technology each year in exchange for: 50 influence/50% Survey speed for 10 years",
+        "-50-200 Opinion with the signing empire first time a Migration Treaty is formed",
+        "-15% Research Speed for 10 years first time a Federation is formed",
+        "-15% Research Speed for 10 years first time a subject is gained",
+        "-5% Happiness for 5 years first time becoming a subject",
+        "-10 Stability for 5 years first time a guardian is encountered",
+        "When an end-game crisis start gain the following: +30% Ship Build Speed; -15% Ship Build Cost",
+        "Completing an ascension tradition tree gives the following for 10 years: -10% Research Speed; -10% Monthly Unity; -1 Codebreaking",
+        "Can get the The Fear of the DArk mid-game event chain"
+      ],
+      "homeworldEffects": ["Start with 8 fewer pops"],
       "requirements": {
         "hasCivic": "",
-        "excludesCivic": "",
+        "excludesCivic": [
+          "civic_inwards_perfection",
+          "civic_fanatic_purifiers",
+          "civic_eager_explorers",
+          "civic_privatized_exploration"
+        ],
         "hasEthic": "",
-        "excludesEthic": "",
+        "excludesEthic": "ethic_gestalt_consciousness",
         "hasAuthority": "",
         "excludesAuthority": ""
       }
     },
     {
-      "id": "",
-      "name": "",
-      "icon": "",
+      "id": "origin_under_one_rule",
+      "name": "Under One Rule",
+      "icon": "Origin_onder_one_rule.png",
+      "image": "origin_onder_one_rule.png",
       "description": "",
-      "empireEffects": [],
+      "empireEffects": [
+        "Species has the Perfected Genes trait",
+        "Ruler has the Luminary trait",
+        "Can select unique ruler traits",
+        "Ruler has skill level 4 and the class' council-focused veteran class",
+        "Choose between 3 planet modifiers when colonizing the first world",
+        "In 6-30 months start the The Unifying Purpose situation",
+        "In 40 years can change authority to Imperial: Imperial authority grants a positive trait and startss the Dissidents on the Rise situation in 5-15 years; Dictatorial authority grants a positive trait in 10-20 years and a negative trait in 20-30 years"
+      ],
       "homeworldEffects": [],
       "requirements": {
         "hasCivic": "",
         "excludesCivic": "",
         "hasEthic": "",
         "excludesEthic": "",
-        "hasAuthority": "",
+        "hasAuthority": "auth_dictatorial",
         "excludesAuthority": ""
       }
     }
